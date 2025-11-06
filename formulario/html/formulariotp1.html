@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keyword" content="cadastro, usuários" />
+    <meta name="description" content="cadastro de novos usuários" />
+    <title>Cadastro de usuário</title>
+    <link rel="stylesheet" href="todos-por-um/css/formulariotp1.css" />
+      <header>
+      <nav id="cabecalho">
+        <ul>
+          <li><a href="index-projeto.html">Inicio</a></li>
+          <li><a href="#">Fórum</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="aprendasobre.html">Aprenda Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+          <li id="botaoInscreva"><a href="login.html">Login/Registre-se</a></li>
+        </ul>
+      </nav>
+    </header>
+  </head>
+
+  <body>
+    <main id="conteudo">
+      <div class="imgmaos">
+        <img src="todos-por-um/img/conceito-de-diversidade-com-as-maos.jpg" />
+      </div>
+      <div class="campos">
+        <h1>FAÇA SEU CADASTRO</h1><hr id="linha">
+        <div id="paragrafo1">
+          Preencha os dados abaixo para criar sua conta no nosso site. Campos
+          marcados com (*) são obrigatórios. Suas informações são confidenciais
+          e poderão ser vistas apenas por você e pela equipe Todos Por Um.
+        </div>
+        <form>
+          <h2>DADOS PESSOAIS</h2>
+          <div class="formulario">
+            <div>
+              <label for="nome">Nome*:</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite aqui.."
+                onchange="
+          if (nome.value.length >=50 ) { 
+            alert('o texto deve ter menos de 50 caracteres.');
+            nome.value = ' ';
+        }
+        "
+              />
+            </div>
+            <div>
+              <label for="sobrenome">Sobrenome*:</label>
+              <input
+                type="text"
+                name="sobrenome"
+                id="sobrenome"
+                placeholder="Digite aqui.."
+                onchange="
+          if (nome.value.length >=50 ) { 
+            alert('o texto deve ter menos de 50 caracteres.');
+            nome.value = ' ';
+        }
+        "
+              />
+            </div>
+            <div>
+              <label for="nomesocial">Nome Social*:</label>
+              <input
+                type="text"
+                name="nomesocial"
+                id="nomesocial"
+                placeholder="Digite aqui.."
+              />
+            </div>
+            <div>
+              <label for="genero">Genero*:</label>
+              <select name="genero" id="genero">
+                <option>Selecione</option>
+                <option value="M">Masculino</option>
+                <option value="F">Femiminino</option>
+                <option value="F">Outro</option>
+              </select>
+            </div>
+            <div>
+              <label for="email">Email*:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite aqui.."
+                onchange="
+          if (email.value.length >=50 ) { 
+            alert('e-mail inválido.');
+            email.value = ' ';
+        }
+        "
+              />
+            </div>
+            <div>
+              <label for="contato">Numero de telefone*:</label>
+              <input
+                type="number"
+                name="contato"
+                id="contato"
+                placeholder="Digite aqui.."
+                onchange="
+        if (parseFloat (contato.value) <= 10) {
+            alert('contato inválido'); 
+            contato.value= ' '; 
+            }
+        "
+              />
+            </div>
+            <div>
+              <label for="datanascimento">Data de Nascimento*:</label>
+              <input
+                type="date"
+                name="datanascimento"
+                id="datanascimento"
+                placeholder="Digite aqui.."
+                onchange="
+          if (datanascimento.value <=Date) { 
+            alert('idade mínima de 18 anos.');
+            datanascimento.value = ' ';
+        }
+        "
+              />
+            </div>
+            <div>
+              <label for="cpf">CPF*:</label>
+              <input
+                type="number"
+                name="cpf"
+                id="cpf"
+                placeholder="Digite aqui.."
+                onchange="
+       if (parseFloat (cpf.value) <= 10) {
+            alert('CPF inválido'); 
+            cpf.value= ' '; 
+            }
+            
+        "
+              />
+            </div>
+            <div>
+              <label for="rg">RG*:</label>
+              <input
+                type="text"
+                name="rg"
+                id="rg"
+                placeholder="Digite aqui.."
+                onchange="
+        if (parseFloat (rg.value) <= 10) {
+            alert('RG inválido'); 
+            rg.value= ''; 
+            }
+        "
+              />
+            </div>
+            <!-- professora vai ensinar a acessar listas e colocar mascara para campos como CPF e RG -->
+            <div>
+              <label for="orgaoemissor">Órgão Emissor*:</label>
+              <select name="orgaoemissor" id="orgaoemissor">
+                
+                <option>Selecione</option>
+                <option value="SSP">SSP</option>
+              </select>
+            </div>
+            <div>
+              <label for="cep">CEP*:</label>
+              <input
+                type="number"
+                name="cep"
+                id="cep"
+                placeholder="Digite aqui.."
+                onchange="
+        if (parseFloat (cep.value) <= 10) {
+            alert('CEP inválido'); 
+            cep.value= ' '; 
+            }
+        "
+              />
+            </div>
+            <div>
+              <label for="rua">Rua*:</label>
+              <input
+                type="text"
+                name="rua"
+                id="rua"
+                placeholder="Digite aqui.."
+                onchange="
+          if (rua.value.length >=50 ) { 
+            alert('o endereço deve ter menos de 50 caracteres.');
+            rua.value = ' ';
+        }
+        "
+              />
+            </div>
+          </div>
+        <fieldset>
+          <legend>DADOS DO PERFIL</legend>
+          <div class="formulario">
+          <div>
+            <label for="nomeusuario">Nome Usuário*:</label>
+            <input
+              type="text"
+              name="nomeusuario"
+              id="nomeusuario"
+              placeholder="Digite aqui.."
+            />
+          </div>
+          <div>
+            <label for="senha">Senha*:</label>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite aqui.."
+            />
+          </div>
+          <div>
+            <label for="confirmarsenha">Confirme sua senha*:</label>
+            <input
+              type="password"
+              name="confirmarsenha"
+              id="confirmarsenha"
+              placeholder="Digite aqui.."
+            />
+          </div>
+          </div>
+        </fieldset>
+        <div class="checkbox">
+          <div>
+          <input type="checkbox" name="aceite[]" id="aceite" value="aceite" />
+          <label for="aceite">
+            Eu concordo em compartilhar meus dados com a
+            equipe Todos Por Um.</label
+          >
+          </div>
+          <div>
+          <input
+            type="checkbox"
+            name="aceite2[]"
+            id="aceite2"
+            value="aceite2"
+          />
+          <label for="aceite2">
+            Eu li e concondo com os Termos de Serviço da comunidade.</label
+          >
+          </div>
+        
+          <div id="registro">
+         <div>                        
+         <a href="login.html">Já tem uma conta? Faça login.</a>
+         </div>
+        </div>
+        </div>
+        <div class="formulario">
+        <button type="reset" name="limpar" id="limpar">Limpar</button>
+        <button type="submit" name="criarconta" id="criarconta">
+          Criar minha conta
+        </button>
+        </div>
+        
+      </div>
+      
+      </form>
+    </main>
+  </body>
+  <!-- <footer id="rodape"> 
+    <nav id="mapasite">
+        <ul>
+          <li><a href="#">Fórum</a></li>
+          <li><a href="#">Sua área</a></li>
+          <li><a href="#">Sua conta</a></li>
+          <li><a href="#">Suas postagens</a></li>
+          <li><a href="#">Segurança e Privacidade</a></li>
+          <li><a href="#">Acessibilidade</a></li>
+        
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Sua o projeto</a></li>
+          <li><a href="#">Nossos Objetivos</a></li>
+       
+          <li><a href="#">Nossas Políticas</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Regras do Todos Por Um</a></li>
+        
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Entre em contato</a></li>
+          <li><a href="#">Aprenda sobre</a></li>
+          <li><a href="#">Vídeos</a></li>
+          <li><a href="#">Artigos</a></li>
+        </ul>
+       </nav>
+    </footer> -->
+</html>
