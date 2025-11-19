@@ -10,13 +10,19 @@
 body {
   background-color: #EBF2FA;
   font-family: "poppins";
-  color: #e9702a;
 }
 #paragrafo1 {
   color: #333;
 }
 #cabecalho {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+ 
+}
+#cabecalho {
+  position: fixed;
+  width: 100%;
+  z-index: 99999999;
+  background-color: #EBF2FA;
 }
 #cabecalho ul {
         

@@ -19,6 +19,14 @@ body {
 #cabecalho {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
+#cabecalho {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #EBF2FA;
+  top:0
+
+}
 #cabecalho ul {
         
   display: flex;
@@ -53,7 +61,7 @@ body {
   background-color: #e9702a;
   color: #ffffff;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: bold;
   width: 140px;
   padding: 5px 5px;
   border-radius: 5px;

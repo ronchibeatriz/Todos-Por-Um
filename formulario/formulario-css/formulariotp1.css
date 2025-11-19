@@ -12,7 +12,15 @@ body {
   background-color: #ebf2fa;
   font-family: "poppins";
   color: #e9702a;
-  max-height: 100%;
+
+}
+#cabecalho {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #EBF2FA;
+  top:0
+
 }
 #cabecalho ul {
   display: flex;
@@ -26,6 +34,7 @@ body {
   background-size: 120px auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   font-size: 12px;
+  margin: 0 auto;
 }
 #cabecalho ul li a {
   color: #e9702a;
@@ -33,7 +42,8 @@ body {
   font-weight: bold;
 }
 #cabecalho ul li {
-  margin: 0 20px;
+  padding: 0 20px;
+ 
 }
 #cabecalho ul li a:hover {
   color: #05668d;
@@ -41,7 +51,7 @@ body {
 #cabecalho #botaoInscreva a {
   background-color: #e9702a;
   color: #ffffff;
-  font-weight: normal;
+  font-weight: bold;
   width: 180px;
   padding: 5px;
   border-radius: 5px;
@@ -61,7 +71,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   min-height: 90vh;
-  margin: 20px;
+  margin: 70px auto;
   gap: 10px;
 
 }
@@ -99,7 +109,7 @@ body {
   flex: 1;
   min-width: 350px;
   background-color: #ebf2fa;
-  padding: 30px 40px;
+  padding: 50px 40px;
   display: flex;
   flex-direction: column;        
   justify-content: space-between;

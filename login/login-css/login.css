@@ -14,6 +14,13 @@ body {
   color: #e9702a;
   max-height: auto;
 }
+#cabecalho {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #EBF2FA;
+  top:0
+}
 #cabecalho ul {
   display: flex;
   justify-content: end;
@@ -41,7 +48,7 @@ body {
 #cabecalho #botaoInscreva a {
   background-color: #e9702a;
   color: #ffffff;
-  font-weight: normal;
+  font-weight: bold;
   width: 180px;
   padding: 5px;
   border-radius: 5px;
@@ -60,9 +67,9 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  min-height: 90vh;
-  margin: 20px;
+  margin: 70px auto;
   gap: 10px;
+
 
 }
 .imgmaos {

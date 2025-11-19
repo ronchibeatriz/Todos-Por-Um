@@ -12,12 +12,21 @@ body {
   font-family: "poppins";
   color: #e9702a;
   
+  
 }
 #paragrafo1 {
   color: #333;
 }
 #cabecalho {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+#cabecalho {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #EBF2FA;
+  top:0
+
 }
 #cabecalho ul {
         
@@ -53,7 +62,7 @@ body {
   background-color: #e9702a;
   color: #ffffff;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: bold;
   width: 140px;
   padding: 5px 5px;
   border-radius: 5px;
@@ -69,8 +78,9 @@ body {
 }
 
 .titulosecao{
-    margin: 0 225px;
+    margin: 0 auto;
     padding-bottom: 20px;
+  
 }
 
 
@@ -78,26 +88,32 @@ body {
     color: #404040;
     font-size: 12px;
     padding-bottom: 10px;
+    margin: 0 auto;
+    
 }
 .titulosecao p {
     color: #9DAAB9;
     font-size: 12px;
+    margin: 0 auto;
+  
 }
 
 
 .conteudovideo{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 160px auto 20px auto;
+  padding: 0 20px;
+
   
 }
 .conteudovideo video{
-    width: 900px;
+  width: 900px;
   height: 450px;
   object-fit: cover;
   border-radius: 10px;
+  padding: 0 auto;
   
 }
 .play {
