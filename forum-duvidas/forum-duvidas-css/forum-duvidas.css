@@ -69,51 +69,170 @@
 
 
 
-      #menusPolitica {
-        margin: 90px 0;
-      }
-      
 
-      #menusPolitica ul {
+
+
+
+
+      .destaque{
+        margin-top: 50px;
+        background-color: #ffffff;
+        padding: 20px;
+        max-width: 900px;
+        border-radius: 15px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .destaque h3{
+        color: #e9702a;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      .cabeca{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .tagsDestaque{
+        color: #ffffff;
+        display:inline-block;
+      }
+
+      .tagsDestaque ul {
         margin: 0;
         padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 2px;
+      }
+
+    
+
+      .aberto {
+        background-color: #C54525;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 2px 8px 2px 8px;
+      }
+
+      .resolvido {
+        background-color: #629643;
+        border-radius: 5px;
+        margin-right: 10px;
+        padding: 2px 8px 2px 8px;
+      }
+
+
+
+
+
+
+
+
+      .navegacaoForum {
+        background-color: #ffffff;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 120px auto 30px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .navegacaoForum ul {
+        margin: 0;
+        padding: 0;
+        gap: 35px;
         list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      #menusPolitica ul li {
-        background-color: #629643;
-        border-radius: 5px;
-        margin: 30px 10px;
+      .navegacaoForum ul li {
+        color: #e9702a;
+        font-weight: 500;
+        margin: 10px 10px;
         padding: 2px 8px 2px 8px;
       }
 
-      #menusPolitica ul a {
+      .navegacaoForum ul a {
+        color: #e9702a;
         text-decoration: none;
-        color: #ffffff;
+      }
+
+      .navegacaoForum ul a:hover {
+        color: #05668d;
+        cursor: pointer;
       }
 
 
-      .politica {
-        max-width: 90rem;
-        margin: auto;
+
+
+
+
+      .conteudoForum {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        margin: 60px 0px;
+      }
+      
+
+
+
+
+
+
+
+
+
+      .filtros {
+        background-color: #ffffff;
+        padding: 2rem;
+        max-width: fit-content;
+        max-height: fit-content;
+        border-radius: 12px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
       }
 
-      .politica h1 {
+      .filtros h2 {
         color: #05668d;
       }
 
-      #dataPublicacao {
+      .filtros h3 {
+        color: #e9702a;
+      }
+
+      .interacaoForum {
+        display: inline-flex;
+        gap: 1rem;
+      }
+
+      #pesquisarPublicacao {
+        border-color: #9DAAB9;
+        background-color: #ebf2fa;
+        padding: 0.8rem 2rem;
+        min-width: 39rem;
+        border-radius: 0.7rem;
+        font-family: 'Poppins';
+      }
+
+      .interacaoForum a {
+        text-decoration: none;
+        padding: 0.8rem 2rem;
+        border-radius: 0.7rem;
+        background-color: #629643;
+        color: #ffffff;
+      }
+
+      .interacoes {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: flex-end;
         color: #9DAAB9;
       }
 
-      #politicaConteudo {
-        text-align: justify;
-        margin-bottom: 6rem;
-      }
-    
 
 
 
@@ -133,6 +252,11 @@
 
 
 
+
+
+
+
+      
       footer {
         background-color: #05668d;
       }

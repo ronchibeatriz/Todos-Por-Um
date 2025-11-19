@@ -38,6 +38,10 @@
 
       #menu {
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
       }
 
       #navegacao ul li {
@@ -123,7 +127,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 50px;
-        margin: 60px 0px;
+        margin: 120px 0px;
       }
 
 
