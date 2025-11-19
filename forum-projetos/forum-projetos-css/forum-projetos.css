@@ -38,6 +38,10 @@
 
       #menu {
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
       }
 
       #navegacao ul li {
@@ -121,7 +125,7 @@
         background-color: #ffffff;
         border-radius: 10px;
         max-width: 500px;
-        margin: 40px auto;
+        margin: 120px auto 30px;
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
       }
 
@@ -142,7 +146,12 @@
         padding: 2px 8px 2px 8px;
       }
 
-      .navegacaoForum ul li:hover {
+      .navegacaoForum ul a {
+        color: #e9702a;
+        text-decoration: none;
+      }
+
+      .navegacaoForum ul a:hover {
         color: #05668d;
         cursor: pointer;
       }
@@ -195,7 +204,7 @@
         border-color: #9DAAB9;
         background-color: #ebf2fa;
         padding: 0.8rem 2rem;
-        min-width: 39rem;
+        min-width: 30rem;
         border-radius: 0.7rem;
         font-family: 'Poppins';
       }
