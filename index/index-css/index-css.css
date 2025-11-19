@@ -64,7 +64,7 @@
 
       #banner {
         background-image: linear-gradient( to right, rgba(5, 102, 141, 0.8), rgba(4, 7, 9, 0.8)),
- url('../img/pexels-cytonn-955389.jpg');
+ url('../index-img/pexels-cytonn-955389.jpg');
         background-size: cover;
         background-position: 30%;
         padding: 130px;
@@ -271,8 +271,9 @@
 
       .rodapebaixo {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         gap: 40px;
+        margin: 0 auto;
         padding: 30px;
       }
 

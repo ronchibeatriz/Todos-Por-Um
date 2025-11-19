@@ -193,9 +193,10 @@ footer {
 
 .rodapebaixo {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 30px;
+        justify-content: space-around;
+        gap: 40px;
+        margin: 0 auto;
+        padding: 30px;
 }
 
 .rodapebaixo p {
