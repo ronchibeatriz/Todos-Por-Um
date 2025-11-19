@@ -1,0 +1,219 @@
+    @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap%27");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebf2fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+     header {
+        background-color: #ebf2fa;
+      }
+
+      #navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ebf2fa;
+        padding: 10px 40px;
+      }
+
+      #navegacao ul {
+        display: flex;
+        justify-content: flex-end;
+        height: 40px;
+        align-items: center;
+        list-style: none;
+        font-size: 12px;
+      }
+
+      #navegacao ul a{
+        color: #e9702a;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      #navegacao ul a:hover{
+        color: #05668d;
+      }
+
+      #menu {
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+      }
+
+      #navegacao ul li {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+
+      #navegacao #login a{
+        background-color: #e9702a;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px 10px;
+        
+      }
+
+
+ .azul{
+    color: #05668D ;
+   text-align: center;
+ }
+
+ .bloco{
+    color: #05668D;
+ }
+
+.objetivos {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.objetivos h2 {
+  color: #004a6d;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+#navegacao #letra a{
+  background-color:#e9702a ;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas por linha */
+  gap: 30px; /* espaço entre os cards */
+  justify-items: center; /* centraliza os cards dentro das colunas */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* CARD INDIVIDUAL */
+.card {
+  background-color: #ebf2fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+  width: 220px;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #004a6d;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-width: 200px;
+}
+
+/* RESPONSIVO: em telas menores, reduz para 2 e depois 1 card por linha */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+ 
+.objetivos p{
+    color: #404040;
+}
+.foto{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin:auto;
+  justify-content: center;
+}
+.foto img{
+  width: 500px;
+}
+#texto{
+  max-width: 800px;
+}
+
+
+ footer {
+        background-color: #05668d;
+      }
+
+      .rodape {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px;
+        gap: 20px;
+        margin: auto;
+        max-width: 1500px;
+      }
+
+      .rodape ul {
+        list-style: none;
+      }
+
+      .rodape ul a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      .rodape ul a:hover {
+        color: #e9702a;
+      }
+
+      .rodapetitulo {
+        color: #99CEF3;
+      }
+
+
+      #linharodape {
+        max-width: 1300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 30px;
+        padding: auto;
+      }
+
+      .rodapebaixo {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 30px;
+      }
+
+      .rodapebaixo p {
+        color: #ffffff;
+      }
