@@ -12,7 +12,10 @@
       content="O projeto “Todos Por Um” consiste em um website no qual a população de Marília poderá acessar e contribuir com ideias, questões sociais ou projetos, propriamente ditos, cujo objetivo principal será o de levá-los até a Câmara Municipal para serem votados."
     />
     <meta name="author" content="Beatriz Ronchi" />
-    <link rel="stylesheet" href="../forum-reclamacoes-css/forum-reclamacoes.css" />
+    <link
+      rel="stylesheet"
+      href="../forum-reclamacoes-css/forum-reclamacoes.css"
+    />
   </head>
   <body>
     <header>
@@ -26,11 +29,30 @@
           />
           <ul>
             <li><a href="../../index/index-html/index.html">Início</a></li>
-            <li><a href="../../forum-projetos/forum-projetos-html/forum-projetos.html">Fórum</a></li>
-            <li><a href="../../sobre-nos/sobrenos-html/sobre-nos.html">Sobre Nós</a></li>
-            <li><a href="../../aprendasobre/aprenda-html/aprendasobre.html">Aprenda Sobre</a></li>
-            <li><a href="../../contato/contato-html/contato.html">Contato</a></li>
-            <li id="login"><a href="../../formulario/formulario-html/formulariotp1.html">Login/Registre-se</a></li>
+            <li>
+              <a
+                href="../../forum-projetos/forum-projetos-html/forum-projetos.html"
+                >Fórum</a
+              >
+            </li>
+            <li>
+              <a href="../../sobre-nos/sobrenos-html/sobre-nos.html"
+                >Sobre Nós</a
+              >
+            </li>
+            <li>
+              <a href="../../aprendasobre/aprenda-html/aprendasobre.html"
+                >Aprenda Sobre</a
+              >
+            </li>
+            <li>
+              <a href="../../contato/contato-html/contato.html">Contato</a>
+            </li>
+            <li id="login">
+              <a href="../../formulario/formulario-html/formulariotp1.html"
+                >Login/Registre-se</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -39,14 +61,23 @@
     <main>
       <div class="navegacaoForum">
         <ul>
-          <li><a href="../../forum-projetos/forum-projetos-html/forum-projetos.html">Projetos</a></li>
+          <li>
+            <a
+              href="../../forum-projetos/forum-projetos-html/forum-projetos.html"
+              >Projetos</a
+            >
+          </li>
           <li><a href="forum-reclamacoes.html">Reclamações</a></li>
-          <li><a href="../../forum-duvidas/forum-duvidas-html/forum-duvidas.html">Dúvidas</a></li>
+          <li>
+            <a href="../../forum-duvidas/forum-duvidas-html/forum-duvidas.html"
+              >Dúvidas</a
+            >
+          </li>
         </ul>
       </div>
 
       <div class="conteudoForum">
-          <div class="organizacao">
+        <div class="organizacao">
           <div class="interacaoForum">
             <form>
               <input
@@ -58,7 +89,74 @@
             </form>
 
             <br />
-            <a href="#">Fazer uma reclamação</a>
+            <button id="abreModal" class="botaoFazerpubli">
+              Faça uma publicação
+            </button>
+
+            <div id="modal" class="modal someModal">
+              <div class="conteudoModal">
+                <span id="fechaModal" class="fechaModal">x</span>
+                <h2 id="modalTitulo">FAÇA SUA PUBLICAÇÃO</h2>
+                <hr id="linha" />
+                <p>
+                  <strong
+                    >Leia atentamente antes de publicar no nosso fórum.</strong
+                  ><br /><br />
+
+                  Preencha corretamente os campos solicitados e certifique-se de
+                  que sua reclamação esteja em conformidade com as regras da
+                  plataforma Todos por Um. Lembre-se: qualquer conteúdo
+                  inadequado, malicioso ou que viole nossas diretrizes será
+                  removido. O usuário responsável poderá receber um strike ou
+                  até perder o acesso à conta.
+                </p>
+                <hr id="linha" />
+                <form>
+                  <label for="tituloPublicacao" class="titulo"
+                    >Título da reclamação</label
+                  >
+                  <br />
+                  <input
+                    type="text"
+                    name="tituloPublicacao"
+                    id="tituloPublicacao"
+                    class="campo"
+                  />
+
+                  <br /><br />
+                  <label class="titulo">Conteúdo da reclamação</label>
+                  <br />
+                  <textarea
+                    name="conteudoPublicacao"
+                    id="conteudoPublicacao"
+                    class="campo"
+                    rows="5"
+                    cols="100"
+                  ></textarea>
+
+                  <br /><br />
+                  <input
+                    type="checkbox"
+                    name="cienteBotao"
+                    id="cienteBotao"
+                    class="tagOpcao"
+                  />
+                  <label
+                    >Estou ciente das regras do site Todos por Um em relação a
+                    postagems e tomo qualquer responsabilidade sobre minha
+                    postagem.</label
+                  >
+
+                  <div id="botaoPosicao">
+                    <br /><br />
+                    <button type="submit" class="botaoConfirmar">
+                      Publicar
+                    </button>
+                    <button type="reset" class="botaoConfirmar">Limpar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
 
           <div>
@@ -73,12 +171,22 @@
               </div>
               <h3>Buracos na Rua Prejudicam Moradores</h3>
               <p>
-                <strong>Descrição:</strong> Minha rua está cheia de buracos há meses, o que tem dificultado muito a circulação de carros e pedestres. Quando chove, a situação piora ainda mais, formando poças grandes e perigosas. Já ocorreram pequenos acidentes e danos a veículos. Peço que a prefeitura realize a manutenção urgente do asfalto para garantir mais segurança e qualidade de vida para todos os moradores.
+                <strong>Descrição:</strong> Minha rua está cheia de buracos há
+                meses, o que tem dificultado muito a circulação de carros e
+                pedestres. Quando chove, a situação piora ainda mais, formando
+                poças grandes e perigosas. Já ocorreram pequenos acidentes e
+                danos a veículos. Peço que a prefeitura realize a manutenção
+                urgente do asfalto para garantir mais segurança e qualidade de
+                vida para todos os moradores.
               </p>
               <div class="interacoes">
-                <img src="../forum-reclamacoes-img/palm-of-hand.png" width="25" />
+                <img
+                  src="../forum-reclamacoes-img/palm-of-hand.png"
+                  width="25"
+                />
                 43
-                <img src="../forum-reclamacoes-img/chat (1).png" width="25" /> 12
+                <img src="../forum-reclamacoes-img/chat (1).png" width="25" />
+                12
               </div>
             </section>
 
@@ -93,12 +201,22 @@
               </div>
               <h3>Buracos na Rua Prejudicam Moradores</h3>
               <p>
-                <strong>Descrição:</strong> Minha rua está cheia de buracos há meses, o que tem dificultado muito a circulação de carros e pedestres. Quando chove, a situação piora ainda mais, formando poças grandes e perigosas. Já ocorreram pequenos acidentes e danos a veículos. Peço que a prefeitura realize a manutenção urgente do asfalto para garantir mais segurança e qualidade de vida para todos os moradores.
+                <strong>Descrição:</strong> Minha rua está cheia de buracos há
+                meses, o que tem dificultado muito a circulação de carros e
+                pedestres. Quando chove, a situação piora ainda mais, formando
+                poças grandes e perigosas. Já ocorreram pequenos acidentes e
+                danos a veículos. Peço que a prefeitura realize a manutenção
+                urgente do asfalto para garantir mais segurança e qualidade de
+                vida para todos os moradores.
               </p>
               <div class="interacoes">
-                <img src="../forum-reclamacoes-img/palm-of-hand.png" width="25" />
+                <img
+                  src="../forum-reclamacoes-img/palm-of-hand.png"
+                  width="25"
+                />
                 43
-                <img src="../forum-reclamacoes-img/chat (1).png" width="25" /> 12
+                <img src="../forum-reclamacoes-img/chat (1).png" width="25" />
+                12
               </div>
             </section>
 
@@ -113,12 +231,22 @@
               </div>
               <h3>Buracos na Rua Prejudicam Moradores</h3>
               <p>
-                <strong>Descrição:</strong> Minha rua está cheia de buracos há meses, o que tem dificultado muito a circulação de carros e pedestres. Quando chove, a situação piora ainda mais, formando poças grandes e perigosas. Já ocorreram pequenos acidentes e danos a veículos. Peço que a prefeitura realize a manutenção urgente do asfalto para garantir mais segurança e qualidade de vida para todos os moradores.
+                <strong>Descrição:</strong> Minha rua está cheia de buracos há
+                meses, o que tem dificultado muito a circulação de carros e
+                pedestres. Quando chove, a situação piora ainda mais, formando
+                poças grandes e perigosas. Já ocorreram pequenos acidentes e
+                danos a veículos. Peço que a prefeitura realize a manutenção
+                urgente do asfalto para garantir mais segurança e qualidade de
+                vida para todos os moradores.
               </p>
               <div class="interacoes">
-                <img src="../forum-reclamacoes-img/palm-of-hand.png" width="25" />
+                <img
+                  src="../forum-reclamacoes-img/palm-of-hand.png"
+                  width="25"
+                />
                 43
-                <img src="../forum-reclamacoes-img/chat (1).png" width="25" /> 12
+                <img src="../forum-reclamacoes-img/chat (1).png" width="25" />
+                12
               </div>
             </section>
 
@@ -133,12 +261,22 @@
               </div>
               <h3>Buracos na Rua Prejudicam Moradores</h3>
               <p>
-                <strong>Descrição:</strong> Minha rua está cheia de buracos há meses, o que tem dificultado muito a circulação de carros e pedestres. Quando chove, a situação piora ainda mais, formando poças grandes e perigosas. Já ocorreram pequenos acidentes e danos a veículos. Peço que a prefeitura realize a manutenção urgente do asfalto para garantir mais segurança e qualidade de vida para todos os moradores.
+                <strong>Descrição:</strong> Minha rua está cheia de buracos há
+                meses, o que tem dificultado muito a circulação de carros e
+                pedestres. Quando chove, a situação piora ainda mais, formando
+                poças grandes e perigosas. Já ocorreram pequenos acidentes e
+                danos a veículos. Peço que a prefeitura realize a manutenção
+                urgente do asfalto para garantir mais segurança e qualidade de
+                vida para todos os moradores.
               </p>
               <div class="interacoes">
-                <img src="../forum-reclamacoes-img/palm-of-hand.png" width="25" />
+                <img
+                  src="../forum-reclamacoes-img/palm-of-hand.png"
+                  width="25"
+                />
                 43
-                <img src="../forum-reclamacoes-img/chat (1).png" width="25" /> 12
+                <img src="../forum-reclamacoes-img/chat (1).png" width="25" />
+                12
               </div>
             </section>
 
@@ -153,12 +291,22 @@
               </div>
               <h3>Buracos na Rua Prejudicam Moradores</h3>
               <p>
-                <strong>Descrição:</strong> Minha rua está cheia de buracos há meses, o que tem dificultado muito a circulação de carros e pedestres. Quando chove, a situação piora ainda mais, formando poças grandes e perigosas. Já ocorreram pequenos acidentes e danos a veículos. Peço que a prefeitura realize a manutenção urgente do asfalto para garantir mais segurança e qualidade de vida para todos os moradores.
+                <strong>Descrição:</strong> Minha rua está cheia de buracos há
+                meses, o que tem dificultado muito a circulação de carros e
+                pedestres. Quando chove, a situação piora ainda mais, formando
+                poças grandes e perigosas. Já ocorreram pequenos acidentes e
+                danos a veículos. Peço que a prefeitura realize a manutenção
+                urgente do asfalto para garantir mais segurança e qualidade de
+                vida para todos os moradores.
               </p>
               <div class="interacoes">
-                <img src="../forum-reclamacoes-img/palm-of-hand.png" width="25" />
+                <img
+                  src="../forum-reclamacoes-img/palm-of-hand.png"
+                  width="25"
+                />
                 43
-                <img src="../forum-reclamacoes-img/chat (1).png" width="25" /> 12
+                <img src="../forum-reclamacoes-img/chat (1).png" width="25" />
+                12
               </div>
             </section>
 
@@ -173,12 +321,22 @@
               </div>
               <h3>Buracos na Rua Prejudicam Moradores</h3>
               <p>
-                <strong>Descrição:</strong> Minha rua está cheia de buracos há meses, o que tem dificultado muito a circulação de carros e pedestres. Quando chove, a situação piora ainda mais, formando poças grandes e perigosas. Já ocorreram pequenos acidentes e danos a veículos. Peço que a prefeitura realize a manutenção urgente do asfalto para garantir mais segurança e qualidade de vida para todos os moradores.
+                <strong>Descrição:</strong> Minha rua está cheia de buracos há
+                meses, o que tem dificultado muito a circulação de carros e
+                pedestres. Quando chove, a situação piora ainda mais, formando
+                poças grandes e perigosas. Já ocorreram pequenos acidentes e
+                danos a veículos. Peço que a prefeitura realize a manutenção
+                urgente do asfalto para garantir mais segurança e qualidade de
+                vida para todos os moradores.
               </p>
               <div class="interacoes">
-                <img src="../forum-reclamacoes-img/palm-of-hand.png" width="25" />
+                <img
+                  src="../forum-reclamacoes-img/palm-of-hand.png"
+                  width="25"
+                />
                 43
-                <img src="../forum-reclamacoes-img/chat (1).png" width="25" /> 12
+                <img src="../forum-reclamacoes-img/chat (1).png" width="25" />
+                12
               </div>
             </section>
           </div>
@@ -199,39 +357,97 @@
         </div>
         <ul>
           <li class="rodapetitulo">Fórum</li>
-          <li><a href="../../forum-projetos/forum-projetos-html/forum-projetos.html">Posts em destaque</a></li>
+          <li>
+            <a
+              href="../../forum-projetos/forum-projetos-html/forum-projetos.html"
+              >Posts em destaque</a
+            >
+          </li>
         </ul>
 
         <ul>
           <li class="rodapetitulo">Sua área</li>
-          <li><a href="../../sua-conta/sua-conta-html/sua-conta.html">Sua conta</a></li>
-          <li><a href="../../suas-postagens/suas-postagens-html/suas-postagens.html">Suas postagens</a></li>
-          <li><a href="../../seguranca-privacidade/seguranca-privacidade-html/seguranca-privacidade.html">Segurança e privacidade</a></li>
-          <li><a href="../../acessibilidade/acessibilidade-html/acessibilidade.html">Acessibilidade</a></li>
+          <li>
+            <a href="../../sua-conta/sua-conta-html/sua-conta.html"
+              >Sua conta</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../suas-postagens/suas-postagens-html/suas-postagens.html"
+              >Suas postagens</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../seguranca-privacidade/seguranca-privacidade-html/seguranca-privacidade.html"
+              >Segurança e privacidade</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../acessibilidade/acessibilidade-html/acessibilidade.html"
+              >Acessibilidade</a
+            >
+          </li>
         </ul>
 
         <ul>
           <li class="rodapetitulo">Sobre nós</li>
-          <li><a href="../../sobre-nos/sobrenos-html/sobre-nos.html">Sobre o projeto</a></li>
-          <li><a href="../../sobre-nos/sobrenos-html/sobre-nos.html">Nossos objetivos</a></li>
+          <li>
+            <a href="../../sobre-nos/sobrenos-html/sobre-nos.html"
+              >Sobre o projeto</a
+            >
+          </li>
+          <li>
+            <a href="../../sobre-nos/sobrenos-html/sobre-nos.html"
+              >Nossos objetivos</a
+            >
+          </li>
         </ul>
 
         <ul>
           <li class="rodapetitulo">Contato</li>
-          <li><a href="../../contato/contato-html/contato.html">Entre em contato</a></li>
+          <li>
+            <a href="../../contato/contato-html/contato.html"
+              >Entre em contato</a
+            >
+          </li>
         </ul>
 
         <ul>
           <li class="rodapetitulo">Aprenda Sobre</li>
-          <li><a href="../../aprenda-videos/aprenda-videos-html/aprenda-videos.html">Vídeos</a></li>
-          <li><a href="../../aprendasobre/aprenda-html/aprendasobre.html">Artigos</a></li>
+          <li>
+            <a
+              href="../../aprenda-videos/aprenda-videos-html/aprenda-videos.html"
+              >Vídeos</a
+            >
+          </li>
+          <li>
+            <a href="../../aprendasobre/aprenda-html/aprendasobre.html"
+              >Artigos</a
+            >
+          </li>
         </ul>
 
         <ul>
           <li class="rodapetitulo">Nossas políticas</li>
-          <li><a href="../../politica-privacidade/politica-privacidade-html/politica-privacidade.html">Políticas de privacidade</a></li>
-          <li><a href="../../politica-cookies/cookies-html/cookies.html">Políticas de cookies</a></li>
-          <li><a href="../../termos-de-uso/termos-uso-html/termos-uso.html">Termos de Uso</a></li>
+          <li>
+            <a
+              href="../../politica-privacidade/politica-privacidade-html/politica-privacidade.html"
+              >Políticas de privacidade</a
+            >
+          </li>
+          <li>
+            <a href="../../politica-cookies/cookies-html/cookies.html"
+              >Políticas de cookies</a
+            >
+          </li>
+          <li>
+            <a href="../../termos-de-uso/termos-uso-html/termos-uso.html"
+              >Termos de Uso</a
+            >
+          </li>
         </ul>
       </div>
       <hr id="linharodape" />
@@ -271,5 +487,6 @@
         </div>
       </div>
     </footer>
+    <script src="../forum-reclamacoes-js/forum-reclamacoes.js"></script>
   </body>
 </html>
