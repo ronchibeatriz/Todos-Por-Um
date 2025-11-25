@@ -249,15 +249,12 @@ footer {
   gap: 20px;
   margin: 0 auto;
   width: 100%;
-  max-width: 100%;
   box-sizing: border-box;
           
 }
 
 .rodape ul {
   list-style: none;
-  min-width: 100px;
-        
 }
 
 .rodape ul a {
