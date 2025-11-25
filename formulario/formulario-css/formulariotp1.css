@@ -12,7 +12,6 @@ body {
   background-color: #ebf2fa;
   font-family: "poppins";
   color: #e9702a;
-
 }
 #cabecalho {
   position: fixed;
@@ -42,7 +41,7 @@ body {
   font-weight: bold;
 }
 #cabecalho ul li {
-  padding: 0 20px;
+  margin: 0 20px;
  
 }
 #cabecalho ul li a:hover {
@@ -70,7 +69,6 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  min-height: 90vh;
   margin: 70px auto;
   gap: 10px;
 
@@ -78,8 +76,9 @@ body {
 .imgmaos {
   position: relative;                /* necessário para posicionar o filtro */
   flex: 1;
-  min-width: 400px;
-  min-height: 1200px;
+  min-width: auto;
+  min-height: auto;
+  max-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +86,7 @@ body {
 }
 .imgmaos img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -205,28 +204,28 @@ button:hover {
 }
  .checkbox {
   display: flex;
-  flex-direction: column; /* empilha cada linha (cada div com checkbox + texto) */
-  gap: 10px; /* espaço entre as linhas */
+  flex-direction: column; 
+  gap: 10px; 
   margin-top: 15px;
 }
 
 .checkbox div {
   display: flex;
-  align-items: center; /* alinha verticalmente o quadradinho e o texto */
-  gap: 8px; /* espaço entre o quadradinho e o texto */
+  align-items: center; 
+  gap: 8px;
 }
 
-.checkbox input[type="checkbox"] {
+.checkbox input {
   width: 16px;
   height: 16px;
   box-shadow: none;
-  margin: 0; /* remove margens indesejadas */
+  margin: 0; 
 }
 
 .checkbox label {
   font-weight: normal;
   color: #333;
-  font-size: 12px; /* um pouco maior para melhor leitura */
+  font-size: 12px; 
   text-decoration: none;
 }
 .checkbox #registro a{
