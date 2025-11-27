@@ -8,27 +8,47 @@
   </head>
   <body>
     <header>
-      <div class="topo">
-        <img src="../contato-img/Capturar.PNG" alt="Logo Todos por Um" />
+      <div id="menu">
         <nav id="navegacao">
+          <img
+            src="../contato-img/Capturar.PNG"
+            alt="Logo Todos por Um"
+            width="100"
+            height="60"
+          />
+
           <ul>
-            <li><a href="index.HTML">Início</a></li>
-            <li><a href="#">Fórum</a></li>
-            <li><a href="sobre-nos.HTML">Sobre nós</a></li>
-            <li><a href="#">Aprenda Sobre</a></li>
+            <li><a href="../../index/index-html/index.html">Início</a></li>
+            <li>
+              <a
+                href="../../forum-projetos/forum-projetos-html/forum-projetos.html"
+                >Fórum</a
+              >
+            </li>
+            <li>
+              <a href="../../sobre-nos/sobrenos-html/sobre-nos.html"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a href="../../aprendasobre/aprenda-html/aprendasobre.html"
+                >Aprenda Sobre</a
+              >
+            </li>
             <li><a href="contato.html">Contato</a></li>
-            <li id="letra"><a href="#">Login/Registre-se</a></li>
+            <li id="letra">
+              <a href="../../login/login-html/login.html">Login/Registre-se</a>
+            </li>
           </ul>
         </nav>
       </div>
-</header>
-      <main id="sob">
-        <div class="texto">
-          <h1>ENTRE EM CONTATO CONOSCO</h1>
-          <p>Dúvidas, reclamações, sugestões etc.</p>
-        </div>
-      </main>
-      <section id="conteudo">
+    </header>
+    <div id="banner">
+      <h1 id="tituloBanner">ENTRE EM <strong>CONTATO</strong> CONOSCO</h1>
+      <p id="textoBanner">Dúvidas, reclamações, sugestões etc.</p>
+    </div>
+    <main id="conteudo">
+      <section id="beneficio">
         <h2>ENTRE EM CONTATO</h2>
         <p>
           Preencha o formulário e a equipe do Todos Por Um entrara em contato
@@ -44,8 +64,8 @@
             class="contato"
             placeholder="Digite aqui..."
           />
-          <br/>
-           <label for="email" class="campo"><E-mail></label><br />
+          <br />
+          <label for="email" class="campo">E-mail</label><br />
           <input
             type="email"
             name="email"
@@ -53,20 +73,20 @@
             class="contato"
             placeholder="Digite aqui..."
           />
-          <br/>
-           <label for="contatar" class="campo">Motivo do contato</label><br />
-          <select name="motivo" id="motivo"></select>
-          <option>Selecione um motivo </option>
-          <option>Reclamações </option>
-          <option>Dúvidas </option>
-          <option>Problema no Login</option>
-          <option>Reportar erro no site </option>
-          <option>Atualização/Correção de dados pessoais</option>
-          <option>Sugestão de melhoria</option>
-          
+          <br />
+          <label for="contatar" class="campo">Motivo do contato</label><br />
+          <select name="motivo" id="motivo">
+            <option>Selecione...</option>
+            <option>Reclamações</option>
+            <option>Dúvidas</option>
+            <option>Problema no Login</option>
+            <option>Reportar erro no site</option>
+            <option>Atualização/Correção de dados pessoais</option>
+            <option>Sugestão de melhoria</option>
+          </select>
         </form>
       </section>
-    
+    </main>
     <footer>
       <div class="rodape">
         <div id="logorodape">

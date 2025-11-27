@@ -6,53 +6,67 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: #ebf2fa;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-/* 🔹 Cabeçalho (alinha logo + menu na mesma linha) */
-.topo {
+header {
+  background-color: #ebf2fa;
+}
+
+#navegacao {
   display: flex;
-  justify-content: space-between; /* separa imagem e menu */
-  align-items: center;            /* centraliza verticalmente */
+  align-items: center;
+  justify-content: space-between;
   background-color: #ebf2fa;
   padding: 10px 40px;
 }
 
-/* 🔹 Imagem do logo */
-.topo img {
-  height: 70px; /* ajuste conforme o tamanho desejado */
-}
-
-/* 🔹 Menu de navegação */
 #navegacao ul {
   display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  align-items: center;
   list-style: none;
-  gap: 20px; /* espaçamento entre os links */
+  font-size: 12px;
 }
 
-/* 🔹 Links do menu */
 #navegacao ul a {
   color: #e9702a;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 #navegacao ul a:hover {
-  color: #05668D;
+  color: #05668d;
 }
 
-#navegacao #letra a{
+#menu {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+#navegacao ul li {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#navegacao #login a {
   background-color: #e9702a;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
   padding: 5px 10px;
 }
+
+#navegacao #letra a {
+  background-color: #e9702a;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
 #navegacao #letra a:hover{
-  color: #05668D;
+  color: #05668d;
 }
 
 /* 🔹 Banner */
@@ -64,27 +78,32 @@ body {
   color: white;
 }
 
-/* 🔹 Fundo da seção */
-#sob {
+/* banner */
+#banner {
   background-image: linear-gradient( to right, rgba(5, 102, 141, 0.8), rgba(4, 7, 9, 0.8)),
  url('../contato-img/pexels-zen-chung-5745183.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#sob h1{
-  color: white;
+ h1{
+  color: #fff;
   margin:0 auto;
   padding: 20px;
 }
-#sob p {
+
+h1 strong {
+  color: #e9702a;
+}
+
+#textoBanner p {
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -92,13 +111,51 @@ body {
 }
 
 #conteudo{
-  background-color: #fff;
-  max-width: 700px;
+  background-color: #ebf2fa;
+  max-width: 1200px;
   margin: 30px auto;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   border-radius: 10px;
   padding: 20px;
+  border-right: 440px solid #05668d;
 }
+
+#beneficio{
+  background-color: #ebf2fa;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#nome{
+  min-width: 300px;
+  background-color:#ebf2fa ;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  border: none;
+  padding: 5px;
+}
+
+#email{
+  min-width: 300px;
+  background-color:#ebf2fa ;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  border: none;
+  padding: 2px;
+}
+
+#motivo{
+  min-width: 300px;
+  background-color:#ebf2fa ;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  border: none;
+  padding: 2px;
+}
+
+
+/* Rodapé */
 
 footer{
   background-color: #05668D;
