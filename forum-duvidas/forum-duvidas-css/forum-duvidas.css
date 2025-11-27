@@ -218,20 +218,97 @@
         font-family: 'Poppins';
       }
 
-      .interacaoForum a {
-        text-decoration: none;
-        padding: 0.8rem 2rem;
-        border-radius: 0.7rem;
-        background-color: #629643;
-        color: #ffffff;
-      }
+      .botaoFazerpubli {
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.7rem;
+  background-color: #629643;
+  color: #ffffff;
+  border: none;
+  font-family: "Poppins";
+  font-size: 1rem;
+  cursor: pointer;
+}
 
-      .interacoes {
-        display: flex;
-        gap: 0.5rem;
-        justify-content: flex-end;
-        color: #9DAAB9;
-      }
+      .botaoConfirmar {
+  border: none;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.4rem;
+  background-color: #629643;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Poppins";
+}
+
+#linha {
+  margin: 30px 0px;
+}
+
+.titulo {
+  color: #05668d;
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.someModal {
+  display: none;
+}
+
+.conteudoModal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 710px;
+  text-align: left;
+}
+
+.fechaModal {
+  float: right;
+  cursor: pointer;
+}
+
+#modalTitulo {
+  color: #e9702a;
+}
+
+#botaoPosicao {
+  text-align: end;
+}
+
+.campo {
+  background-color: #ebf2fa;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  font-family: "Poppins";
+}
+
+.tagOpcao {
+  background-color: #ebf2fa;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.interacoes {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  color: #9daab9;
+}
 
 
 
