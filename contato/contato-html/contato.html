@@ -48,45 +48,70 @@
       <p id="textoBanner">Dúvidas, reclamações, sugestões etc.</p>
     </div>
     <main id="conteudo">
-      <section id="beneficio">
-        <h2>ENTRE EM CONTATO</h2>
-        <p>
-          Preencha o formulário e a equipe do Todos Por Um entrara em contato
-          brevemente com você.
-        </p>
-        <br />
-        <form>
-          <label for="nome" class="campo">Nome completo</label><br />
-          <input
-            type="text"
-            name="nome"
-            id="nome"
-            class="contato"
+      <div class="lados">
+        <section id="beneficio">
+          <h2>ENTRE EM CONTATO</h2>
+          <p>
+            Preencha o formulário e a equipe do Todos Por Um entrara em contato
+            brevemente com você.
+          </p>
+
+          <form>
+            <div class="baixo">
+              <label for="nome" class="campo">Nome completo</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                class="contato"
+                placeholder="Digite aqui..."
+              />
+            </div>
+            <div class="baixo">
+              <label for="email" class="campo">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contato"
+                placeholder="Digite aqui..."
+              />
+            </div>
+            <div class="baixo">
+            <label for="contatar" class="campo">Motivo do contato</label>
+            <select name="motivo" id="motivo">
+              <option id="selecione">Selecione...</option>
+              <option>Reclamações</option>
+              <option>Dúvidas</option>
+              <option>Problema no Login</option>
+              <option>Reportar erro no site</option>
+              <option>Atualização/Correção de dados pessoais</option>
+              <option>Sugestão de melhoria</option>
+              </div>
+            </select>
+            <div class="baixo">
+          <label for="descricao" class="campo">Descrição</label>
+          <textarea
+            name="descricao"
+            id="descricao"
+            rows="5"
+            cols="65"
             placeholder="Digite aqui..."
-          />
-          <br />
-          <label for="email" class="campo">E-mail</label><br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="contato"
-            placeholder="Digite aqui..."
-          />
-          <br />
-          <label for="contatar" class="campo">Motivo do contato</label><br />
-          <select name="motivo" id="motivo">
-            <option>Selecione...</option>
-            <option>Reclamações</option>
-            <option>Dúvidas</option>
-            <option>Problema no Login</option>
-            <option>Reportar erro no site</option>
-            <option>Atualização/Correção de dados pessoais</option>
-            <option>Sugestão de melhoria</option>
-          </select>
-        </form>
-      </section>
+          ></textarea>
+          </div>
+            </form>
+        </section>
+      </div>
+      <div class="lados">
+        <section id="ladoAzul">
+          <p>
+            Você também pode entrar em contato <br />com a equipe Todos Por Um
+            por meio <br />de uma de nossas redes de <br />comunicação:
+          </p>
+        </section>
+      </div>
     </main>
+
     <footer>
       <div class="rodape">
         <div id="logorodape">
