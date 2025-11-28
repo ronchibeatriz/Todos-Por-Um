@@ -318,4 +318,7 @@ footer {
     flex-direction: column;
   gap: 10px;
   }
+  .imgmaos img{
+    display: none;
+  }
 }
