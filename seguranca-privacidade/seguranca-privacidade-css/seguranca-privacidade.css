@@ -141,10 +141,6 @@
 
 
 
-
-
-
-
 #blocos {
         display: flex;
         flex-direction: row;
@@ -211,3 +207,25 @@
       .rodapebaixo p {
         color: #ffffff;
       }
+
+      #responsivoRodape {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  #responsivoRodape {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #blocos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0px;
+  }
+}
