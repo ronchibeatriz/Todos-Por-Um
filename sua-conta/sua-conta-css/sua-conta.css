@@ -1,226 +1,219 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-      @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      header {
-        background-color: #ebf2fa;
-      }
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #ebf2fa;
+}
 
-      #navegacao {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #ebf2fa;
-        padding: 10px 40px;
-      }
+#navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ebf2fa;
+  padding: 10px 40px;
+}
 
-      #navegacao ul {
-        display: flex;
-        justify-content: flex-end;
-        height: 40px;
-        align-items: center;
-        list-style: none;
-        font-size: 12px;
-      }
+#navegacao ul {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  align-items: center;
+  list-style: none;
+  font-size: 12px;
+}
 
-      #navegacao ul a{
-        color: #e9702a;
-        text-decoration: none;
-        font-weight: bold;
-      }
+#navegacao ul a {
+  color: #e9702a;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-      #navegacao ul a:hover{
-        color: #05668d;
-      }
+#navegacao ul a:hover {
+  color: #05668d;
+}
 
-      #menu {
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 100;
-      }
+#menu {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
 
-      #navegacao ul li {
-        margin-left: 15px;
-        margin-right: 15px;
-      }
+#navegacao ul li {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 
-      #navegacao #login a{
-        background-color: #e9702a;
-        color: #ffffff;
-        border-radius: 5px;
-        padding: 5px 10px;
-        
-      }
+#navegacao #login a {
+  background-color: #e9702a;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
 
-      body {
-        background-color: #ebf2fa;
-        font-family: 'Poppins','Prompt';
-        color: #333333;
-      }
+body {
+  background-color: #ebf2fa;
+  font-family: "Poppins", "Prompt";
+  color: #333333;
+}
 
+.abasConfig {
+  background-color: #ffffff;
+  max-width: 360px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
 
+.abasConfig ul {
+  list-style: none;
+}
 
+.abasConfig ul li {
+  margin: 20px;
+}
 
-      
-      .abasConfig {
-        background-color: #ffffff;
-        max-width: 360px;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-      }
+.abasConfig ul a {
+  text-decoration: none;
+  color: #333333;
+  margin-left: 20px;
+}
 
-      .abasConfig ul {
-        list-style: none;
-      }
+.abaAberta {
+  background-color: #ffffff;
+  max-width: 1000px;
+  padding: 30px;
+  border-radius: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
 
-      .abasConfig ul li {
-        margin: 20px;
-      }
+.linhaAba {
+  margin: 30px 0px;
+}
 
-      .abasConfig ul a {
-        text-decoration: none;
-        color: #333333;
-        margin-left: 20px;
-      }
+#botaoSalvar {
+  background-color: #629643;
+  color: #ffffff;
+  font-family: "Poppins";
+  border: none;
+  border-radius: 5px;
+  padding: 2px 10px;
+  cursor: pointer;
+}
 
+.tituloCampo {
+  color: #05668d;
+  font-weight: 550;
+}
 
+.campo {
+  background-color: #ebf2fa;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  font-family: "Poppins";
+}
 
+#nome {
+  padding: 6px 70px;
+}
 
+#nomeusuario {
+  padding: 6px 70px;
+}
 
-      .abaAberta {
-        background-color: #ffffff;
-        width: 1000px;
-        padding: 30px;
-        border-radius: 30px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-      }
+#arquivoFoto::file-selector-button {
+  background-color: #629643;
+  color: #ffffff;
+  font-family: "Poppins";
+  border: none;
+  border-radius: 5px;
+  padding: 2px 10px;
+  cursor: pointer;
+}
 
-      .linhaAba {
-        margin: 30px 0px;
-      }
+#removerFoto {
+  background-color: #629643;
+  color: #ffffff;
+  font-family: "Poppins";
+  border: none;
+  border-radius: 5px;
+  padding: 2px 10px;
+  cursor: pointer;
+}
 
-      #botaoSalvar {
-        background-color: #629643;
-        color: #ffffff;
-        font-family: 'Poppins';
-        border: none;
-        border-radius: 5px;
-        padding: 2px 10px;
-        cursor: pointer;
-      }
+#blocos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin: 120px 0px;
+}
 
-      .tituloCampo {
-        color: #05668d;
-        font-weight: 550;
-      }
+@media (max-width: 800px) {
+  #blocos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0px;
+  }
+}
 
-      .campo {
-        background-color: #ebf2fa;
-        border: none;
-        border-radius: 5px;
-        padding: 6px;
-        font-family: 'Poppins';
-      }
+footer {
+  background-color: #05668d;
+}
 
-      #nome {
-        padding: 6px 70px;
-      }
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  gap: 20px;
+  margin: auto;
+  max-width: 1500px;
+}
 
-      #nomeusuario {
-        padding: 6px 70px;
-      }
+.rodape ul {
+  list-style: none;
+}
 
-      #arquivoFoto::file-selector-button {
-        background-color: #629643;
-        color: #ffffff;
-        font-family: 'Poppins';
-        border: none;
-        border-radius: 5px;
-        padding: 2px 10px;
-        cursor: pointer;
-      }
+.rodape ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
-      #removerFoto {
-        background-color: #629643;
-        color: #ffffff;
-        font-family: 'Poppins';
-        border: none;
-        border-radius: 5px;
-        padding: 2px 10px;
-        cursor: pointer;
-      }
+.rodape ul a:hover {
+  color: #e9702a;
+}
 
+.rodapetitulo {
+  color: #99cef3;
+}
 
+#linharodape {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: auto;
+}
 
-      #blocos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
-        margin: 120px 0px;
-      }
+.rodapebaixo {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 30px;
+}
 
-
-
-
-      footer {
-        background-color: #05668d;
-      }
-
-      .rodape {
-        display: flex;
-        justify-content: space-between;
-        padding: 80px;
-        gap: 20px;
-        margin: auto;
-        max-width: 1500px;
-      }
-
-      .rodape ul {
-        list-style: none;
-      }
-
-      .rodape ul a {
-        text-decoration: none;
-        color: #ffffff;
-      }
-
-      .rodape ul a:hover {
-        color: #e9702a;
-      }
-
-      .rodapetitulo {
-        color: #99CEF3;
-      }
-
-
-      #linharodape {
-        max-width: 1300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        margin-bottom: 30px;
-        padding: auto;
-      }
-
-      .rodapebaixo {
-        display: flex;
-        justify-content: space-around;
-        gap: 40px;
-        margin: 0 auto;
-        padding: 30px;
-      }
-
-      .rodapebaixo p {
-        color: #ffffff;
-      }
-
-      
+.rodapebaixo p {
+  color: #ffffff;
+}
