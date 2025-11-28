@@ -231,54 +231,82 @@ background-color: #05668D;
  }
  /* RODAPÉ!!!!!!!!!!!!!!!!!!!!!!!!!! */
 footer {
-        background-color: #05668d;
-      }
+  background-color: #05668d;
+}
+.rodape{
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+.rodapeconteudo{
+  flex: 1;
+}
 
-      .rodape {
-        display: flex;
-        justify-content: space-between;
-        padding: 80px;
-        gap: 20px;
-        margin: auto;
-        max-width: 1500px;
-      }
+.rodape ul {
+  list-style: none;
+  text-align: start;
+}
 
-      .rodape ul {
-        list-style: none;
-      }
+.rodape ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
 
-      .rodape ul a {
-        text-decoration: none;
-        color: #ffffff;
-      }
+.rodape ul a:hover {
+  color: #e9702a;
+}
 
-      .rodape ul a:hover {
-        color: #e9702a;
-      }
+.rodapetitulo {
+  color: #99CEF3;
+  font-size: 12px;
+}
 
-      .rodapetitulo {
-        color: #99CEF3;
-      }
+#linharodape {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: auto;
+}
+.rodapebaixo {
+
+  display: flex;
+  gap: 757px;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.rodapebaixoconteudo {
+  flex: 1;
+ 
+}
 
 
-      #linharodape {
-        max-width: 1300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        margin-bottom: 30px;
-        padding: auto;
-      }
-
-      .rodapebaixo {
-        display: flex;
-        justify-content: space-around;
-        gap: 40px;
-        margin: 0 auto;
-        padding: 30px;
-      }
-
-      .rodapebaixo p {
-        color: #ffffff;
-      }
+.rodapebaixo p {
+  color: #ffffff;
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+ .rodape {
+  flex-direction: column;
+  gap: 10px;
+  }
+  .rodapebaixo{
+  flex-direction: column;
+  gap: 10px;
+  }
+  #conteudo{
+    flex-direction: column;
+  gap: 10px;
+  }
+}
