@@ -1,6 +1,6 @@
-    @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap%27");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +65,7 @@ header {
   padding: 5px 10px;
 }
 
-#navegacao #letra a:hover{
+#navegacao #letra a:hover {
   color: #05668d;
 }
 
@@ -80,8 +80,12 @@ header {
 
 /* banner */
 #banner {
-  background-image: linear-gradient( to right, rgba(5, 102, 141, 0.8), rgba(4, 7, 9, 0.8)),
- url('../contato-img/pexels-zen-chung-5745183.jpg');
+  background-image: linear-gradient(
+      to right,
+      rgba(5, 102, 141, 0.8),
+      rgba(4, 7, 9, 0.8)
+    ),
+    url("../../img/pexels-zen-chung-5745183.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -93,9 +97,9 @@ header {
   align-items: center;
 }
 
- h1{
+h1 {
   color: #fff;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -107,109 +111,89 @@ h1 strong {
   color: white;
   margin: 0 auto;
   text-align: center;
-  
 }
 
-#conteudo{
-  background-color: #ebf2fa;
-  border-radius: 5px;
-  margin:10px auto;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  max-width: 1200px;
-  
-}
-
-#beneficio{
-  background-color: #ebf2fa;  
-  margin:10px auto; 
+.esquerda {
+  background-color: rgb(255, 255, 255);
+  max-width: 700px;
   padding: 30px;
+  min-height: 440px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.esquerda p {
+  margin-bottom: 20px;
+}
+
+.botao {
+  background-color: #629643;
+  color: #ffffff;
+  font-family: "Poppins";
+  border: none;
   border-radius: 5px;
-  min-height: 400px;
-  
-}
-.baixo{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
-
-}
-.baixo textarea{
-  min-width: 300px;
+  padding: 2px 10px;
+  cursor: pointer;
 }
 
-label{
+label {
   color: #e9702a;
 }
-
-#descricao{
+.contato {
   background-color: #ebf2fa;
-  border-radius: 7px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+}
+.infos {
+  background-color: #427aa1;
+  display: flex;
+  text-align: start;
+  gap: 30px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  align-items: center;
+  border-radius: 10px;
+}
+.direita {
+  background-color: #05668d;
+  color: aliceblue;
+  max-width: 450px;
+  min-height: 660px;
+  padding: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
 }
 
-#ladoAzul{
-  background-color: #05668d;
-   border-radius: 5px;
-  margin:10px auto;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  max-width: 450spx;
+.look {
+  display: flex;
+  flex-direction: column;
+}
+
+.rosa {
   display: flex;
   justify-content: center;
-  height: 500px;
+  align-items: center;
+  margin: 60px;
 }
-#ladoAzul p{
-text-align:center;
-color: #fff;
-}
-
-#conteudo{
+#rede {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
   gap: 20px;
-  margin: 0 auto;
-  max-width: 1100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+}
+.linha {
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
-.lados{
-  flex: 1;
+#pUm {
+  margin-bottom: 60px;
 }
-
-
-#nome{
-  min-width: 300px;
-  background-color:#ebf2fa ;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  border: none;
-  padding: 5px;
-}
-
-#email{
-  min-width: 300px;
-  background-color:#ebf2fa ;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  border: none;
-  padding: 2px;
-}
-
-#motivo{
-  min-width: 300px;
-  background-color:#ebf2fa ;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  border: none;
-  padding: 2px;
-}
-
 
 /* Rodapé */
-
-footer{
-  background-color: #05668D;
-}
-
 footer {
   background-color: #05668d;
 }
@@ -221,6 +205,12 @@ footer {
   gap: 20px;
   margin: auto;
   max-width: 1500px;
+}
+
+#responsivoRodape {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .rodape ul {
@@ -241,7 +231,7 @@ footer {
 }
 
 #linharodape {
-  max-width:auto;
+  max-width: 1300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,12 +242,32 @@ footer {
 
 .rodapebaixo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 40px;
-  padding: 30px auto;
-  margin: 0 90px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .rodapebaixo p {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  #responsivoRodape {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .rosa{
+    flex-direction: column;
+  }
+  .esquerda{
+    border-radius: 20px;
+  }
+  
+ .direita{
+ border-radius: 20px;
+  margin-top: 70px;
+  min-height:500px ;
+ }
 }
