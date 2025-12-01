@@ -111,13 +111,26 @@ h1{
   color: #05668d;
 }
 .titulosecao h2 {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  margin: 10px 150px;
-  text-align: center;
+  padding: 30px auto;
+  margin: 40px auto;
+  text-align: start;
   color: #05668D;
-  
+  max-width: 1100px;
     
+}
+.artigos{
+  margin-bottom: 30px;
+}
+
+#linhacentral{
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: auto;
+  border: 1px solid #05668D;
 }
 /* DESTAQUES DESTAQUES DESTAQUES  */
 
@@ -126,22 +139,23 @@ h1{
  flex-direction: column;
  gap: 10px;
  width: 100%;
- margin-left: 10px;
+
 
 }
 .destaqueesquerda img {
   width: 100%;
-  height: 350px;
+  height: 400px;
   object-fit: cover;
   display: block;
+  padding-bottom: 15px;
 }
 .campos {
 
   background-color: #ebf2fa;      
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 0 auto;
   gap: 50px;                   
-  max-width: 1300px;
+  max-width: 1100px;
   display: flex;
   justify-content: center;
 
@@ -159,7 +173,7 @@ h1{
   line-height: 1.5;
   font-size: 12px;
   text-align: justify;
-  max-width: 1200px;  
+  max-width: 1100px;  
   margin-bottom: 20px;
 }
 
@@ -180,7 +194,7 @@ h1{
  display: flex;
  flex-direction: column;
  gap: 10px;
- margin-right: 10px;
+ margin-bottom: 50px;
 }
 
 .botaoleiacompleto {
@@ -194,7 +208,6 @@ h1{
   cursor: pointer;
   font-size: 12px;
   text-decoration: none;
-
 }
 
 .botaoleiacompleto:hover {
@@ -202,18 +215,18 @@ background-color: #05668D;
 }
 .colunaartigos{
   background-color: #ebf2fa;      
-  margin: 0px auto;
-  padding-bottom: 30px;
+  margin: 20px auto;
+  padding: 0px auto;
   gap: 50px;                   
-  max-width: 1300px;
+  max-width: 1100px;
   display: flex;
+  width: 100%;
+ 
 }
 .colunaartigos h3{
   color: #404040;
   font-family: "Prompt", sans-serif;
   font-size: 16px;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
  .artigosesquerda .artigosdireita{
   display:flex;
@@ -222,9 +235,10 @@ background-color: #05668D;
 
  }
  .todoconteudo{
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+ 
 
  /* RODAPÉ!!!!!!!!!!!!!!!!!!!!!!!!!! */
 footer {

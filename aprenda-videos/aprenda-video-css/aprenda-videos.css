@@ -93,10 +93,6 @@ h1{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url("../");
-  background-position: left; 
-  background-repeat: no-repeat;
-  background-size: 100px;
   margin: auto;
   width: auto;
         
@@ -105,7 +101,7 @@ h1{
   color: #e9702a;
   text-decoration: none;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
 }
 #artigovideo ul li {
   margin-left: 20px;
@@ -116,8 +112,7 @@ h1{
 }
 .titulosecao h2 {
   padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 10px auto;
+  margin: 0px auto;
   text-align: start;
   color: #05668D;
   font-size: 16px;
@@ -230,7 +225,7 @@ background-color: #05668D;
 }
 .videoscoluna h3{
   color: #404040;
-  font-size: 12px;
+  font-size: 16px;
   text-align: start;
   margin: 10px auto;
   
