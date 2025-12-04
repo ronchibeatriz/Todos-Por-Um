@@ -14,18 +14,27 @@
       content="O projeto “Todos Por Um” consiste em um website no qual a população de Marília poderá acessar e contribuir com ideias, questões sociais ou projetos, propriamente ditos, cujo objetivo principal será o de levá-los até a Câmara Municipal para serem votados."
     />
     <link rel="stylesheet" href="../formulario-css/formulariotp1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <div id="menu">
-        <nav id="navegacao">
+        <div id="navegacao">
           <img
             src="../../img/logo.png"
             alt="Logo Todos por Um"
             width="100"
             height="60"
           />
-          <ul>
+          <div class="menu-container">
+          <nav class="menunav" id="menunav">
+            <ul>
             <li><a href="../../index/index-html/">Início</a></li>
             <li>
               <a
@@ -46,13 +55,22 @@
             <li>
               <a href="../../contato/contato-html/contato.html">Contato</a>
             </li>
-            <li id="login">
-              <a href="../../login/login-html/login.html"
-                >Login/Registre-se</a
+            </ul>
+            <a href="../../login/login-html/login.html" id="login" class="btn-login"
+                ><i class="fa-solid fa-right-from-bracket"></i>Login</a
               >
-            </li>
-          </ul>
-        </nav>
+          </nav>
+          </div>
+        </div>
+        <div class="menunav">
+        <a href="#" class="btnhambur"
+          ><i class="fa-solid fa-right-from-bracket"></i>Login</a
+        >
+        </div>
+        <button class="hamburguer" id="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      </div>
     </header>
   </head>
 
