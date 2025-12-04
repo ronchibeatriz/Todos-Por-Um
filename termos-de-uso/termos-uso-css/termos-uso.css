@@ -94,15 +94,18 @@ body {
 
 .politica h1 {
   color: #05668d;
+  margin-left: 2rem;
 }
 
 #dataPublicacao {
   color: #9daab9;
+  margin-left: 2rem;
 }
 
 #politicaConteudo {
   text-align: justify;
   margin-bottom: 6rem;
+  padding: 2rem;
 }
 
 footer {
@@ -162,6 +165,7 @@ footer {
   flex-direction: row;
   gap: 40px;
 }
+
 
 @media (max-width: 768px) {
   #responsivoRodape {
