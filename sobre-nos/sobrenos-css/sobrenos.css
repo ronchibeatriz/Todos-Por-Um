@@ -24,9 +24,14 @@ header {
   padding: 10px 40px;
 }
 
+.hamburguer {
+  display: none;
+}
+
 #navegacao ul {
   display: flex;
   justify-content: flex-end;
+  gap:30px;
   height: 40px;
   align-items: center;
   list-style: none;
@@ -48,8 +53,7 @@ header {
 }
 
 #navegacao ul li {
-  margin-left: 15px;
-  margin-right: 15px;
+  text-align:center;
 }
 
 #navegacao #login a {
@@ -242,5 +246,6 @@ footer {
   .foto img {
     margin-top:15px;
   }
+
  
 }
