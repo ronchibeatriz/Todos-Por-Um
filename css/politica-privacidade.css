@@ -22,6 +22,13 @@ header {
   align-items: center;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 }
+
+ header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+  } 
 #fechar-menu {
   display: none;
 }
@@ -122,16 +129,12 @@ header {
 }
 /* MENU RESPONSIVO MENU RESPONSIVO MENU RESPONSIVO  */
 
-
-
-
-
-
       
 
-      #menusPolitica {
-        margin: 90px 0;
+    #menusPolitica {
+        margin-top: 90px;         
       }
+      
 
       #menusPolitica ul {
         margin: 0;
@@ -161,7 +164,7 @@ header {
         font-size: 12px;
       }
 
-   .politica h1 {
+      .politica h1 {
         color: #05668d;
         margin-left: 2rem;
       }
@@ -176,7 +179,6 @@ header {
         margin-bottom: 6rem;
         padding: 2rem;
       }
-    
     
 
 
@@ -254,6 +256,7 @@ header {
     font-size: 10px;
     margin: 10px 50px;
     text-align: center;
+    margin-top: 90px;
       }
       
 }

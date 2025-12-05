@@ -27,7 +27,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
-  }
+  } 
 #fechar-menu {
   display: none;
 }
