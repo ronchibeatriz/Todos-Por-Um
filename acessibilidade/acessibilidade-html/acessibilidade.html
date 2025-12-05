@@ -13,128 +13,266 @@
     />
     <meta name="author" content="Beatriz Ronchi" />
     <link rel="stylesheet" href="../acessibilidade-css/acessibilidade.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <div id="menu">
-        <nav id="navegacao">
-          <img
-            src="../../img/logo.png"
-            alt="Logo Todos por Um"
-            width="100"
-            height="60"
-          />
-          <ul>
-            <li><a href="../../index/index-html/index.html">Início</a></li>
-            <li><a href="../../forum-projetos/forum-projetos-html/forum-projetos.html">Fórum</a></li>
-            <li><a href="../../sobre-nos/sobrenos-html/sobre-nos.html">Sobre Nós</a></li>
-            <li><a href="../../aprendasobre/aprenda-html/aprendasobre.html">Aprenda Sobre</a></li>
-            <li><a href="../../contato/contato-html/contato.html">Contato</a></li>
-            <li id="login"><a href="../../formulario/formulario-html/formulariotp1.html">Login/Registre-se</a></li>
+      <img
+        src="../../img/logo.png"
+        alt="Logo do projeto"
+        width="100"
+        height="60"
+      />
+      <div class="menu-container">
+        <nav class="menu" id="menu">
+          <a href="javascript:;" id="fechar-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <ul id="menu">
+            <li><a href="../../index/index-html/index.html">Inicio</a></li>
+            <li><a href="#">Fórum</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="aprendasobre.html">Aprenda Sobre</a></li>
+            <li><a href="#">Contato</a></li>
           </ul>
+          <a href="#" class="btn-login"
+            ><i class="fa-solid fa-right-from-bracket"></i>Login/Registre-se</a
+          >
         </nav>
       </div>
+      <div class="btn-desk">
+        <a href="#" class="btn-login"
+          ><i class="fa-solid fa-right-from-bracket"></i>Login/Registre-se</a
+        >
+      </div>
+      <button class="hamburguer" id="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
 
     <main>
       <div id="blocos">
-      <div class="abasConfig">
-      <ul>
-        <li><img src="../../img/user.png" alt="Sua conta" width="30" /><a href="../../sua-conta/sua-conta-html/sua-conta.html">Sua conta</a></li>
-        <li><img src="../../img/comment.png" alt="Suas postagens" width="30" /><a href="../../suas-postagens/suas-postagens-html/suas-postagens.html">Suas postagens</a></li>
-        <li><img src="../../img/lock.png" alt="Segurança e privacidade" width="30" /><a href="../../seguranca-privacidade/seguranca-privacidade-html/seguranca-privacidade.html">Segurança e privacidade</a></li>
-        <li><img src="../../img/setting-lines.png" alt="Acessibilidade" width="30" /><a href="acessibilidade.html">Acessibilidade</a></li>
-        <li><img src="../../img/logout.png" alt="Sair" width="30" /><a href="../../login/login-html/login.html">Sair</a></li>
-      </ul>
-      </div>
+        <div class="abasConfig">
+          <ul>
+            <li>
+              <img src="../../img/user.png" alt="Sua conta" width="30" /><a
+                href="../../sua-conta/sua-conta-html/sua-conta.html"
+                >Sua conta</a
+              >
+            </li>
+            <li>
+              <img
+                src="../../img/comment.png"
+                alt="Suas postagens"
+                width="30"
+              /><a
+                href="../../suas-postagens/suas-postagens-html/suas-postagens.html"
+                >Suas postagens</a
+              >
+            </li>
+            <li>
+              <img
+                src="../../img/lock.png"
+                alt="Segurança e privacidade"
+                width="30"
+              /><a
+                href="../../seguranca-privacidade/seguranca-privacidade-html/seguranca-privacidade.html"
+                >Segurança e privacidade</a
+              >
+            </li>
+            <li>
+              <img
+                src="../../img/setting-lines.png"
+                alt="Acessibilidade"
+                width="30"
+              /><a href="acessibilidade.html">Acessibilidade</a>
+            </li>
+            <li>
+              <img src="../../img/logout.png" alt="Sair" width="30" /><a
+                href="../../login/login-html/login.html"
+                >Sair</a
+              >
+            </li>
+          </ul>
+        </div>
 
-      <div>
-        <form class="abaAberta">
+        <div>
+          <form class="abaAberta">
             <h2>Acessibilidade</h2>
-            <hr class="linhaAba">
+            <hr class="linhaAba" />
             <p>Estilização de elementos</p>
-            <br>
+            <br />
 
             <label for="tamanhoFonte">Tamanho da fonte</label>
             <select name="tamanhoFonte" class="campo" id="tamanhoFonte">
-                <option>Pequeno</option>
-                <option>Médio</option>
-                <option>Grande</option>
-                <option>Extra-Grande</option>
+              <option>Pequeno</option>
+              <option>Médio</option>
+              <option>Grande</option>
+              <option>Extra-Grande</option>
             </select>
 
-            <br><br>
+            <br /><br />
             <label>Modo daltônico</label>
             <input type="checkbox" name="daltonico" id="daltonico" />
 
-            <br><br>
+            <br /><br />
             <button type="submit" id="botaoSalvar">Salvar alterações</button>
-        </form>
-      </div>
-      
+          </form>
+        </div>
       </div>
     </main>
 
     <footer>
       <div class="rodape">
         <div id="logorodape">
-        <img id="logorodape"
-          src="../../img/logo branco.png"
-          alt="Logo Todos por Um"
-          width="170"
-          height="90"
-        />
+          <img
+            id="logorodape"
+            src="../../img/logo branco.png"
+            alt="Logo Todos por Um"
+            width="170"
+            height="90"
+          />
         </div>
         <div id="responsivoRodape">
-        <ul>
-          <li class="rodapetitulo">Fórum</li>
-          <li><a href="../../forum-projetos/forum-projetos-html/forum-projetos.html">Posts em destaque</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Fórum</li>
+            <li>
+              <a
+                href="../../forum-projetos/forum-projetos-html/forum-projetos.html"
+                >Posts em destaque</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Sua área</li>
-          <li><a href="../../sua-conta/sua-conta-html/sua-conta.html">Sua conta</a></li>
-          <li><a href="../../suas-postagens/suas-postagens-html/suas-postagens.html">Suas postagens</a></li>
-          <li><a href="../../seguranca-privacidade/seguranca-privacidade-html/seguranca-privacidade.html">Segurança e privacidade</a></li>
-          <li><a href="../../acessibilidade/acessibilidade-html/acessibilidade.html">Acessibilidade</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Sua área</li>
+            <li>
+              <a href="../../sua-conta/sua-conta-html/sua-conta.html"
+                >Sua conta</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../suas-postagens/suas-postagens-html/suas-postagens.html"
+                >Suas postagens</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../seguranca-privacidade/seguranca-privacidade-html/seguranca-privacidade.html"
+                >Segurança e privacidade</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../acessibilidade/acessibilidade-html/acessibilidade.html"
+                >Acessibilidade</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Sobre nós</li>
-          <li><a href="../../sobre-nos/sobrenos-html/sobre-nos.html">Sobre o projeto</a></li>
-          <li><a href="../../sobre-nos/sobrenos-html/sobre-nos.html">Nossos objetivos</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Sobre nós</li>
+            <li>
+              <a href="../../sobre-nos/sobrenos-html/sobre-nos.html"
+                >Sobre o projeto</a
+              >
+            </li>
+            <li>
+              <a href="../../sobre-nos/sobrenos-html/sobre-nos.html"
+                >Nossos objetivos</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Contato</li>
-          <li><a href="../../contato/contato-html/contato.html">Entre em contato</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Contato</li>
+            <li>
+              <a href="../../contato/contato-html/contato.html"
+                >Entre em contato</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Aprenda Sobre</li>
-          <li><a href="../../aprenda-videos/aprenda-videos-html/aprenda-videos.html">Vídeos</a></li>
-          <li><a href="../../aprendasobre/aprenda-html/aprendasobre.html">Artigos</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Aprenda Sobre</li>
+            <li>
+              <a
+                href="../../aprenda-videos/aprenda-videos-html/aprenda-videos.html"
+                >Vídeos</a
+              >
+            </li>
+            <li>
+              <a href="../../aprendasobre/aprenda-html/aprendasobre.html"
+                >Artigos</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Nossas políticas</li>
-          <li><a href="../../politica-privacidade/politica-privacidade-html/politica-privacidade.html">Políticas de privacidade</a></li>
-          <li><a href="../../politica-cookies/cookies-html/cookies.html">Políticas de cookies</a></li>
-          <li><a href="../../termos-de-uso/termos-uso-html/termos-uso.html">Termos de Uso</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Nossas políticas</li>
+            <li>
+              <a
+                href="../../politica-privacidade/politica-privacidade-html/politica-privacidade.html"
+                >Políticas de privacidade</a
+              >
+            </li>
+            <li>
+              <a href="../../politica-cookies/cookies-html/cookies.html"
+                >Políticas de cookies</a
+              >
+            </li>
+            <li>
+              <a href="../../termos-de-uso/termos-uso-html/termos-uso.html"
+                >Termos de Uso</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <hr id="linharodape">
+      <hr id="linharodape" />
       <div class="rodapebaixo">
         <p>Todos os direitos reservados</p>
         <div>
-        <img src="../../img/youtube-circle.png" alt="Ícone Youtube" width="35" height="35" />
-        <img src="../../img/twitter-alt-circle.png" alt="Ícone Twitter" width="35" height="35" />
-        <img src="../../img/whatsapp-circle.png" alt="Ícone Whatsapp" width="35" height="35" />
-        <img src="../../img/facebook (1).png" alt="Ícone Facebook" width="35" height="35" />
-        <img src="../../img/instagram-circle.png" alt="Ícone Instagram" width="35" height="35" />
+          <img
+            src="../../img/youtube-circle.png"
+            alt="Ícone Youtube"
+            width="35"
+            height="35"
+          />
+          <img
+            src="../../img/twitter-alt-circle.png"
+            alt="Ícone Twitter"
+            width="35"
+            height="35"
+          />
+          <img
+            src="../../img/whatsapp-circle.png"
+            alt="Ícone Whatsapp"
+            width="35"
+            height="35"
+          />
+          <img
+            src="../../img/facebook (1).png"
+            alt="Ícone Facebook"
+            width="35"
+            height="35"
+          />
+          <img
+            src="../../img/instagram-circle.png"
+            alt="Ícone Instagram"
+            width="35"
+            height="35"
+          />
         </div>
       </div>
     </footer>
+    <script src="acessibilidade.js"></script>
   </body>
 </html>

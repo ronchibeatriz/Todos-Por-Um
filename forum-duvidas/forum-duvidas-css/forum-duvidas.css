@@ -1,66 +1,126 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* MENU RESPONSIVO MENU RESPONSIVO MENU RESPONSIVO  */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-header {
-  background-color: #ebf2fa;
-}
-
-#navegacao {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ebf2fa;
-  padding: 10px 40px;
-}
-
-#navegacao ul {
-  display: flex;
-  justify-content: flex-end;
-  height: 40px;
-  align-items: center;
-  list-style: none;
-  font-size: 12px;
-}
-
-#navegacao ul a {
-  color: #e9702a;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#navegacao ul a:hover {
-  color: #05668d;
-}
-
-#menu {
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
-
-#navegacao ul li {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-#navegacao #login a {
-  background-color: #e9702a;
-  color: #ffffff;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-
 body {
   background-color: #ebf2fa;
   font-family: "Poppins", "Prompt";
   color: #333333;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebf2fa;
+  color: #e9702a;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+#fechar-menu {
+  display: none;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 50px;
+  flex: 1;
+}
+
+.menu :hover {
+  color: #05668d;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.menu ul a {
+  color: #e9702a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+}
+.btn-login {
+  background-color: #e9702a;
+  color: #ebf2fa;
+  padding: 7px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-desk :hover {
+  color: #05668d;
+}
+
+.hamburguer {
+  display: none;
+}
+.menu .btn-login {
+  display: none;
+}
+/* regras para mobile */
+@media (max-width: 768px) {
+  #fechar-menu {
+    display: block;
+    color: #e9702a;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu {
+    position: fixed;
+    background-color: #ebf2fa;
+    right: -260px;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+    z-index: 9999;
+    transition: right 0.4s ease;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu :hover {
+    color: #05668d;
+  }
+
+  .menu .btn-login {
+    display: block;
+    margin-top: 50px;
+    width: 160px;
+  }
+
+  header .btn-login {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+    font-size: 20px;
+    background: none;
+    color: #e9702a;
+    border: none;
+    cursor: pointer;
+  }
+  .menu-show {
+    right: 0;
+  }
+}
+/* MENU RESPONSIVO MENU RESPONSIVO MENU RESPONSIVO  */
 
 .destaque {
   margin-top: 50px;
@@ -113,7 +173,7 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   max-width: 500px;
-  margin: 120px auto 30px;
+  margin: 50px auto 30px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -236,13 +296,22 @@ body {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  width: 710px;
+  width: 900px;
+  height: 600px;
   text-align: left;
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+.conteudoModal textarea{
+  max-width: 850px;
+  max-height: 100px;
 }
 
 .fechaModal {
   float: right;
   cursor: pointer;
+  font-weight: bolder;
 }
 
 #modalTitulo {
@@ -339,4 +408,37 @@ footer {
     flex-direction: column;
     gap: 40px;
   }
+
+  #pesquisarPublicacao {
+    min-width: 28rem;
+  }
+
+  .botaoFazerpubli {
+    margin: 0 100px;
+  }
+
+  .conteudoModal {
+  max-width: 450px;
+  height: 590px;
+  font-size: 10px;
+}
+.conteudoModal textarea{
+  max-width: 400px;
+  max-height: 70px;
+}
+
+  .interacaoForum {
+    display: block;
+  }
+
+  .conteudoForum {
+    display: block;
+    margin: 40px 20px;
+    max-width: 900px;
+  }
+  .filtros {
+    max-width: 900px;
+    margin-bottom: 30px;
+  }
+  
 }

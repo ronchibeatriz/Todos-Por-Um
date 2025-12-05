@@ -13,35 +13,64 @@
     />
     <meta name="author" content="Beatriz Ronchi" />
     <link rel="stylesheet" href="../forum-projetos-css/forum-projetos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <div id="menu">
-        <nav id="navegacao">
-          <img
-            src="../../img/logo.png"
-            alt="Logo Todos por Um"
-            width="100"
-            height="60"
-          />
-          <ul>
-            <li><a href="../../index/index-html/index.html">Início</a></li>
-            <li><a href="forum-projetos.html">Fórum</a></li>
-            <li><a href="../../sobre-nos/sobrenos-html/sobre-nos.html">Sobre Nós</a></li>
-            <li><a href="../../aprendasobre/aprenda-html/aprendasobre.html">Aprenda Sobre</a></li>
-            <li><a href="../../contato/contato-html/contato.html">Contato</a></li>
-            <li id="login"><a href="../../formulario/formulario-html/formulariotp1.html">Login/Registre-se</a></li>
+      <img
+        src="../../img/logo.png"
+        alt="Logo do projeto"
+        width="100"
+        height="60"
+      />
+      <div class="menu-container">
+        <nav class="menu" id="menu">
+          <a href="javascript:;" id="fechar-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <ul id="menu">
+            <li><a href="../../index/index-html/index.html">Inicio</a></li>
+            <li><a href="#">Fórum</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="aprendasobre.html">Aprenda Sobre</a></li>
+            <li><a href="#">Contato</a></li>
           </ul>
+          <a href="#" class="btn-login"
+            ><i class="fa-solid fa-right-from-bracket"></i>Login/Registre-se</a
+          >
         </nav>
       </div>
+      <div class="btn-desk">
+        <a href="#" class="btn-login"
+          ><i class="fa-solid fa-right-from-bracket"></i>Login/Registre-se</a
+        >
+      </div>
+      <button class="hamburguer" id="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
 
     <main>
       <div class="navegacaoForum">
         <ul>
           <li><a href="forum-projetos.html">Projetos</a></li>
-          <li><a href="../../forum-reclamacoes/forum-reclamacoes-html/forum-reclamacoes.html">Reclamações</a></li>
-          <li><a href="../../forum-duvidas/forum-duvidas-html/forum-duvidas.html">Dúvidas</a></li>
+          <li>
+            <a
+              href="../../forum-reclamacoes/forum-reclamacoes-html/forum-reclamacoes.html"
+              >Reclamações</a
+            >
+          </li>
+          <li>
+            <a href="../../forum-duvidas/forum-duvidas-html/forum-duvidas.html"
+              >Dúvidas</a
+            >
+          </li>
         </ul>
       </div>
 
@@ -55,10 +84,18 @@
             <input type="checkbox" name="tagEducacao" id="Tageducacao" />
             <label>Educação</label><br />
 
-            <input type="checkbox" name="TagInfraestrutura" id="TagInfraestrutura" />
+            <input
+              type="checkbox"
+              name="TagInfraestrutura"
+              id="TagInfraestrutura"
+            />
             <label>Insfraestrutura</label><br />
 
-            <input type="checkbox" name="TagSustentabilidade" id="TagSustentabilidade"/>
+            <input
+              type="checkbox"
+              name="TagSustentabilidade"
+              id="TagSustentabilidade"
+            />
             <label>Sustentabilidade</label><br />
 
             <input type="checkbox" name="TagPolitica" id="TagPolitica" />
@@ -76,22 +113,42 @@
             <input type="checkbox" name="TagLazer" id="TagLazer" />
             <label>Lazer</label><br />
 
-            <input type="checkbox" name="TagSegurancaPublica" id="TagSegurancaPublica"/>
+            <input
+              type="checkbox"
+              name="TagSegurancaPublica"
+              id="TagSegurancaPublica"
+            />
             <label>Segurança Pública</label><br />
 
-            <input type="checkbox" name="TagEmpregabilidade" id="TagEmpregabilidade" />
+            <input
+              type="checkbox"
+              name="TagEmpregabilidade"
+              id="TagEmpregabilidade"
+            />
             <label>Empregabilidade e Renda</label><br />
 
-            <input type="checkbox" name="TagAdministracao" id="TagAdministracao" />
+            <input
+              type="checkbox"
+              name="TagAdministracao"
+              id="TagAdministracao"
+            />
             <label>Administração Pública</label><br />
 
             <input type="checkbox" name="TagTransporte" id="TagTransporte" />
             <label>Transporte</label><br />
 
-            <input type="checkbox"  name="TagDireitosHumanos" id="TagDireitosHumanos" />
+            <input
+              type="checkbox"
+              name="TagDireitosHumanos"
+              id="TagDireitosHumanos"
+            />
             <label>Direitos Humanos e Inclusão</label><br />
 
-            <input type="checkbox" name="TagPlanejamento" id="TagPlanejamento" />
+            <input
+              type="checkbox"
+              name="TagPlanejamento"
+              id="TagPlanejamento"
+            />
             <label>Planejamento e Orçamento</label><br />
 
             <br />
@@ -100,7 +157,11 @@
             <input type="checkbox" name="TagMaisVotos" id="TagMaisVotos" />
             <label>Mais Votos</label><br />
 
-            <input type="checkbox" name="TagMaisComentados" id="TagMaisComentados" />
+            <input
+              type="checkbox"
+              name="TagMaisComentados"
+              id="TagMaisComentados"
+            />
             <label>Mais Comentados</label><br />
           </form>
         </div>
@@ -108,11 +169,18 @@
         <div class="organizacao">
           <div class="interacaoForum">
             <form>
-              <input type="text" name="pesquisarPublicacao" id="pesquisarPublicacao" placeholder="Pesquisar por uma publicação..."/>
+              <input
+                type="text"
+                name="pesquisarPublicacao"
+                id="pesquisarPublicacao"
+                placeholder="Pesquisar por uma publicação..."
+              />
             </form>
 
             <br />
-            <button id="abreModal" class="botaoFazerpubli">Faça uma publicação</button>
+            <button id="abreModal" class="botaoFazerpubli">
+              Faça uma publicação
+            </button>
 
             <div id="modal" class="modal someModal">
               <div class="conteudoModal">
@@ -120,7 +188,9 @@
                 <h2 id="modalTitulo">FAÇA SUA PUBLICAÇÃO</h2>
                 <hr id="linha" />
                 <p>
-                  <strong>Leia atentamente antes de publicar no nosso fórum.</strong><br /><br />
+                  <strong
+                    >Leia atentamente antes de publicar no nosso fórum.</strong
+                  ><br /><br />
                   Preencha corretamente os campos solicitados e certifique-se de
                   que sua publicação esteja em conformidade com as regras da
                   plataforma Todos por Um. Lembre-se: qualquer conteúdo
@@ -132,65 +202,159 @@
                 <form>
                   <label class="titulo">Tags</label><br />
 
-                  <input type="checkbox" name="educacao" id="educacao" class="tagOpcao"/>
+                  <input
+                    type="checkbox"
+                    name="educacao"
+                    id="educacao"
+                    class="tagOpcao"
+                  />
                   <label>Educação</label>
 
-                  <input type="checkbox" name="infraestrutura" id="infraestrutura" class="tagOpcao"/>
+                  <input
+                    type="checkbox"
+                    name="infraestrutura"
+                    id="infraestrutura"
+                    class="tagOpcao"
+                  />
                   <label>Infraestrutura</label>
 
-                  <input type="checkbox" name="sustentabilidade" id="sustentabilidade" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="sustentabilidade"
+                    id="sustentabilidade"
+                    class="tagOpcao"
+                  />
                   <label>Sustentabilidade</label>
 
-                  <input type="checkbox" name="politica" id="politica" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="politica"
+                    id="politica"
+                    class="tagOpcao"
+                  />
                   <label>Política</label>
 
-                  <input type="checkbox" name="tecnologia" id="tecnologia" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="tecnologia"
+                    id="tecnologia"
+                    class="tagOpcao"
+                  />
                   <label>Tecnologia</label>
 
-                  <input type="checkbox" name="cidadania" id="cidadania" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="cidadania"
+                    id="cidadania"
+                    class="tagOpcao"
+                  />
                   <label>Cidadania</label>
 
-                  <input type="checkbox" name="saude" id="saude" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="saude"
+                    id="saude"
+                    class="tagOpcao"
+                  />
                   <label>Saúde</label>
 
-                  <input type="checkbox" name="lazer" id="lazer" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="lazer"
+                    id="lazer"
+                    class="tagOpcao"
+                  />
                   <label>Lazer</label>
 
-                  <input type="checkbox" name="seguranca" id="seguranca" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="seguranca"
+                    id="seguranca"
+                    class="tagOpcao"
+                  />
                   <label>Segurança Pública</label>
 
-                  <input type="checkbox" name="renda" id="renda" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="renda"
+                    id="renda"
+                    class="tagOpcao"
+                  />
                   <label>Empregabilidade e Renda</label>
 
-                  <input type="checkbox" name="administracao" id="administracao" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="administracao"
+                    id="administracao"
+                    class="tagOpcao"
+                  />
                   <label>Administração Pública</label>
 
-                  <input type="checkbox" name="transporte" id="transporte" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="transporte"
+                    id="transporte"
+                    class="tagOpcao"
+                  />
                   <label>Transporte</label>
 
-                  <input type="checkbox" name="direitos" id="direitos" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="direitos"
+                    id="direitos"
+                    class="tagOpcao"
+                  />
                   <label>Direitos Humanos e Inclusão</label>
 
-                  <input type="checkbox" name="planejamento" id="planejamento" class="tagOpcao" />
+                  <input
+                    type="checkbox"
+                    name="planejamento"
+                    id="planejamento"
+                    class="tagOpcao"
+                  />
                   <label>Planejamento e Orçamento</label>
 
                   <br /><br />
-                  <label for="tituloPublicacao" class="titulo">Título da publicação</label>
+                  <label for="tituloPublicacao" class="titulo"
+                    >Título da publicação</label
+                  >
                   <br />
-                  <input type="text" name="tituloPublicacao" id="tituloPublicacao" class="campo" />
+                  <input
+                    type="text"
+                    name="tituloPublicacao"
+                    id="tituloPublicacao"
+                    class="campo"
+                  />
 
                   <br /><br />
                   <label class="titulo">Conteúdo da publicação</label>
                   <br />
-                  <textarea name="conteudoPublicacao" id="conteudoPublicacao" class="campo" rows="5" cols="100"></textarea>
+                  <textarea
+                    name="conteudoPublicacao"
+                    id="conteudoPublicacao"
+                    class="campo"
+                    rows="5"
+                    cols="100"
+                  ></textarea>
 
                   <br /><br />
-                  <input type="checkbox" name="cienteBotao" id="cienteBotao" class="tagOpcao" />
-                  <label>Estou ciente das regras do site Todos por Um em relação a postagems e tomo qualquer responsabilidade sobre minha postagem.</label>
+                  <input
+                    type="checkbox"
+                    name="cienteBotao"
+                    id="cienteBotao"
+                    class="tagOpcao"
+                  />
+                  <label
+                    >Estou ciente das regras do site Todos por Um em relação a
+                    postagems e tomo qualquer responsabilidade sobre minha
+                    postagem.</label
+                  >
 
                   <div id="botaoPosicao">
                     <br /><br />
-                    <button type="submit" class="botaoConfirmar">Publicar</button>
+                    <button type="submit" class="botaoConfirmar">
+                      Publicar
+                    </button>
                     <button type="reset" class="botaoConfirmar">Limpar</button>
                   </div>
                 </form>
@@ -359,45 +523,100 @@
           />
         </div>
         <div id="responsivoRodape">
-        <ul>
-          <li class="rodapetitulo">Fórum</li>
-          <li><a href="../../forum-projetos/forum-projetos-html/forum-projetos.html">Posts em destaque</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Fórum</li>
+            <li>
+              <a
+                href="../../forum-projetos/forum-projetos-html/forum-projetos.html"
+                >Posts em destaque</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Sua área</li>
-          <li><a href="../../sua-conta/sua-conta-html/sua-conta.html">Sua conta</a></li>
-          <li><a href="../../suas-postagens/suas-postagens-html/suas-postagens.html">Suas postagens</a>
-          </li>
-          <li><a href="../../seguranca-privacidade/seguranca-privacidade-html/seguranca-privacidade.html">Segurança e privacidade</a>
-          </li>
-          <li><a href="../../acessibilidade/acessibilidade-html/acessibilidade.html">Acessibilidade</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Sua área</li>
+            <li>
+              <a href="../../sua-conta/sua-conta-html/sua-conta.html"
+                >Sua conta</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../suas-postagens/suas-postagens-html/suas-postagens.html"
+                >Suas postagens</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../seguranca-privacidade/seguranca-privacidade-html/seguranca-privacidade.html"
+                >Segurança e privacidade</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../acessibilidade/acessibilidade-html/acessibilidade.html"
+                >Acessibilidade</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Sobre nós</li>
-          <li><a href="../../sobre-nos/sobrenos-html/sobre-nos.html">Sobre o projeto</a></li>
-          <li><a href="../../sobre-nos/sobrenos-html/sobre-nos.html">Nossos objetivos</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Sobre nós</li>
+            <li>
+              <a href="../../sobre-nos/sobrenos-html/sobre-nos.html"
+                >Sobre o projeto</a
+              >
+            </li>
+            <li>
+              <a href="../../sobre-nos/sobrenos-html/sobre-nos.html"
+                >Nossos objetivos</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Contato</li>
-          <li><a href="../../contato/contato-html/contato.html">Entre em contato</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Contato</li>
+            <li>
+              <a href="../../contato/contato-html/contato.html"
+                >Entre em contato</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Aprenda Sobre</li>
-          <li><a href="../../aprenda-videos/aprenda-videos-html/aprenda-videos.html">Vídeos</a></li>
-          <li><a href="../../aprendasobre/aprenda-html/aprendasobre.html">Artigos</a></li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Aprenda Sobre</li>
+            <li>
+              <a
+                href="../../aprenda-videos/aprenda-videos-html/aprenda-videos.html"
+                >Vídeos</a
+              >
+            </li>
+            <li>
+              <a href="../../aprendasobre/aprenda-html/aprendasobre.html"
+                >Artigos</a
+              >
+            </li>
+          </ul>
 
-        <ul>
-          <li class="rodapetitulo">Nossas políticas</li>
-          <li><a href="../../politica-privacidade/politica-privacidade-html/politica-privacidade.html">Políticas de privacidade</a></li>
-          <li><a href="../../politica-cookies/cookies-html/cookies.html">Políticas de cookies</a></li>
-          <li><a href="../../termos-de-uso/termos-uso-html/termos-uso.html">Termos de Uso</a>
-          </li>
-        </ul>
+          <ul>
+            <li class="rodapetitulo">Nossas políticas</li>
+            <li>
+              <a
+                href="../../politica-privacidade/politica-privacidade-html/politica-privacidade.html"
+                >Políticas de privacidade</a
+              >
+            </li>
+            <li>
+              <a href="../../politica-cookies/cookies-html/cookies.html"
+                >Políticas de cookies</a
+              >
+            </li>
+            <li>
+              <a href="../../termos-de-uso/termos-uso-html/termos-uso.html"
+                >Termos de Uso</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
       <hr id="linharodape" />
