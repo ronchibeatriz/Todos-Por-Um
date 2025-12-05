@@ -169,7 +169,7 @@ header {
 }
 .play {
   position: absolute;
-  top: 55%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 60px;
@@ -248,11 +248,13 @@ footer {
     gap: 40px;
   }
  .conteudovideo video{
-  width: 60%;
+  width: 100%;
+  max-width: 280px;
  
 }
 .play {
-  top: 60%;
+
+  top: 40%;
   left: 50%;
 }
 
