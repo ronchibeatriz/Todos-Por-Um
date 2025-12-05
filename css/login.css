@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* MENU RESPONSIVO MENU RESPONSIVO MENU RESPONSIVO  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ebf2fa;
+  font-family: "Poppins", "Prompt";
+  color: #333333;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebf2fa;
+  color: #e9702a;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+ header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+#fechar-menu {
+  display: none;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 50px;
+  flex: 1;
+}
+
+.menu :hover {
+  color: #05668d;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.menu ul a {
+  color: #e9702a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+}
+.btn-login {
+  background-color: #e9702a;
+  color: #ebf2fa;
+  padding: 7px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-desk :hover {
+  color: #05668d;
+}
+
+.hamburguer {
+  display: none;
+}
+.menu .btn-login {
+  display: none;
+}
+/* regras para mobile */
+@media (max-width: 768px) {
+  #fechar-menu {
+    display: block;
+    color: #e9702a;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu {
+    position: fixed;
+    background-color: #ebf2fa;
+    right: -260px;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+    z-index: 9999;
+    transition: right 0.4s ease;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  }
+ 
+
+  .menu :hover {
+    color: #05668d;
+  }
+
+  .menu .btn-login {
+    display: block;
+    margin-top: 50px;
+    width: 160px;
+  }
+
+  header .btn-login {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+    font-size: 20px;
+    background: none;
+    color: #e9702a;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .menu-show {
+    right: 0;
+  }
+}
+/* MENU RESPONSIVO MENU RESPONSIVO MENU RESPONSIVO  */
+
+#conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0px auto;
+  gap: 10px;
+}
+.imgmaos {
+  position: relative; /* necessário para posicionar o filtro */
+  flex: 1;
+  height: 1210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.imgmaos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.imgmaos::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(5, 102, 141, 0.8),
+    rgba(4, 7, 9, 0.8)
+  );
+  pointer-events: none;
+}
+.campos {
+  flex: 1;
+  width: 100%;
+  background-color: #ebf2fa;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.campos h1 {
+  color: #e9702a;
+  margin-bottom: 10px;
+  font-family: "Prompt", sans-serif;
+  font-size: 25px;
+}
+.campos h2 {
+  color: #e9702a;
+  margin-bottom: 10px;
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+}
+#paragrafo1 {
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 13px;
+}
+#linha {
+  border: 1px solid #e9702a;
+  margin-bottom: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.formulario label {
+  font-weight: bold;
+  color: #e9702a;
+  font-size: 13px;
+}
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.formulario input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 12px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  background-color: #ebf2fa;
+}
+
+#esqueceu {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5px;
+  font-size: 12px;
+  padding: 5px;
+  color: #333;
+}
+#esqueceu a {
+  font-weight: normal;
+  color: #333;
+  padding-bottom: 10px;
+  text-decoration: none;
+  line-height: 1.5;
+}
+#esqueceu #registro {
+  margin-bottom: 200px;
+  line-height: 1.4;
+  font-size: 12px;
+  padding-top: 20px;
+  width: 150%;
+}
+#esqueceu #senha a {
+  display: flex;
+  color: #ccc;
+  text-align: end;
+  justify-content: flex-end;
+}
+#esqueceu #botaoentrar {
+  display: flex;
+  color: #ccc;
+  text-align: end;
+  justify-content: flex-end;
+}
+button {
+  background-color: #629643;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+#entrar:hover {
+  background-color: #4f7a34;
+  color: #05668d;
+}
+
+/* RODAPÉ!!!!!!!!!!!!!!!!!!!!!!!!!! */
+footer {
+  background-color: #05668d;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  gap: 20px;
+  margin: auto;
+  max-width: 1500px;
+}
+
+#responsivoRodape {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.rodape ul {
+  list-style: none;
+}
+
+.rodape ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.rodape ul a:hover {
+  color: #e9702a;
+}
+
+.rodapetitulo {
+  color: #99cef3;
+}
+
+#linharodape {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: auto;
+}
+
+.rodapebaixo {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.rodapebaixo p {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  #responsivoRodape {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #conteudo {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .imgmaos img {
+    display: none;
+  }
+}

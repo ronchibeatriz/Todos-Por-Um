@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keyword" content="cadastro, usuários" />
+    <meta name="description" content="cadastro de novos usuários" />
+    <title>Todos Por Um</title>
+    <meta
+      name="kaywords"
+      content="política, Marília, ideias, comunidade, união"
+    />
+    <meta
+      name="description"
+      content="O projeto “Todos Por Um” consiste em um website no qual a população de Marília poderá acessar e contribuir com ideias, questões sociais ou projetos, propriamente ditos, cujo objetivo principal será o de levá-los até a Câmara Municipal para serem votados."
+    />
+    <link rel="stylesheet" href="css/contato.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../../img/logo.png"
+        alt="Logo do projeto"
+        width="100"
+        height="60"
+      />
+      <div class="menu-container">
+        <nav class="menu" id="menu">
+          <a href="javascript:;" id="fechar-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="forum-projetos.html">Fórum</a></li>
+            <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            <li><a href="aprendasobre.html">Aprenda Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+          <a href="login.html" class="btn-login"
+            ><i class="fa-solid fa-right-from-bracket"></i>Login/Registre-se</a
+          >
+        </nav>
+      </div>
+      <div class="btn-desk">
+        <a href="login.html" class="btn-login"
+          ><i class="fa-solid fa-right-from-bracket"></i>Login/Registre-se</a
+        >
+      </div>
+      <button class="hamburguer" id="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <div id="banner">
+      <h1 id="tituloBanner">ENTRE EM <strong>CONTATO</strong> CONOSCO</h1>
+      <p id="textoBanner">Dúvidas, reclamações, sugestões etc.</p>
+    </div>
+
+    <main>
+      <div class="rosa">
+        <div class="esquerda">
+          <form>
+            <h2>ENTRE EM CONTATO</h2>
+            <p>
+              Preencha o formulário e a equipe do Todos Por Um entrara em
+              contato brevemente com você.
+            </p>
+
+            <label for="nome" class="campo">Nome completo</label><br />
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="contato"
+              placeholder="Digite aqui..."
+            />
+            <br />
+            <br />
+
+            <label for="email" class="campo">E-mail</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="contato"
+              placeholder="Digite aqui..."
+            />
+            <br />
+            <br />
+            <label for="contatar" class="campo">Motivo do contato</label><br />
+            <select name="motivo" id="motivo" class="contato">
+              <option id="selecione">Selecione...</option>
+              <option>Reclamações</option>
+              <option>Dúvidas</option>
+              <option>Problema no Login</option>
+              <option>Reportar erro no site</option>
+              <option>Atualização/Correção de dados pessoais</option>
+              <option>Sugestão de melhoria</option>
+            </select>
+            <br />
+            <br />
+
+            <label for="descricao" class="campo">Descrição</label><br />
+            <textarea
+              name="descricao"
+              id="descricao"
+              class="contato"
+              rows="10"
+              cols="40"
+              placeholder="Digite aqui..."
+            ></textarea>
+
+            <br /><br />
+            <button class="botao" type="reset">Limpar</button>
+            <button class="botao" type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <div class="direita">
+          <p id="pUm">
+            Você também pode entrar em contato <br />com a equipe Todos Por Um
+            por meio <br />de uma de nossas redes de <br />comunicação:
+          </p>
+
+          <section class="infos">
+            <div>
+              <img
+                src="../../img/telephone-call.png"
+                alt="Telefone"
+                height="30"
+              />
+            </div>
+            <p>Telefone: <br />(14) 00000-0000</p>
+          </section>
+
+          <section class="infos">
+            <img src="../../img/email.png" alt="E-mail" height="30" />
+            <p>
+              E-mail: <br />
+              todosporum@gmail.com
+            </p>
+          </section>
+
+          <hr class="linha" />
+          <p>Nossas redes sociais:</p>
+          <div id="rede">
+            <img
+              src="../../img/youtube-circle.png"
+              alt="Ícone Youtube"
+              width="30"
+            />
+            <img
+              src="../../img/twitter-alt-circle.png"
+              alt="Ícone Twitter"
+              width="30"
+            />
+            <img
+              src="../../img/whatsapp-circle.png"
+              alt="Ícone Whatsapp"
+              width="30"
+            />
+            <img
+              src="../../img/facebook (1).png"
+              alt="Ícone Facebook"
+              width="30"
+            />
+            <img
+              src="../../img/instagram-circle.png"
+              alt="Ícone Instagram"
+              width="30"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="rodape">
+        <div id="logorodape">
+          <img
+            id="logorodape"
+            src="../../img/logo branco.png"
+            alt="Logo Todos por Um"
+            width="170"
+            height="90"
+          />
+        </div>
+        <div id="responsivoRodape">
+          <ul>
+            <li class="rodapetitulo">Fórum</li>
+            <li>
+              <a href="forum-projetos.html">Posts em destaque</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Sua área</li>
+            <li>
+              <a href="sua-conta.html">Sua conta</a>
+            </li>
+            <li>
+              <a href="suas-postagens.html">Suas postagens</a>
+            </li>
+            <li>
+              <a href="seguranca-privacidade.html">Segurança e privacidade</a>
+            </li>
+            <li>
+              <a href="acessibilidade.html">Acessibilidade</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Sobre nós</li>
+            <li>
+              <a href="sobre-nos.html">Sobre o projeto</a>
+            </li>
+            <li>
+              <a href="sobre-nos.html">Nossos objetivos</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Contato</li>
+            <li>
+              <a href="contato.html">Entre em contato</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Aprenda Sobre</li>
+            <li>
+              <a href="aprenda-videos.html">Vídeos</a>
+            </li>
+            <li>
+              <a href="aprendasobre.html">Artigos</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Nossas políticas</li>
+            <li>
+              <a href="politica-privacidade.html">Políticas de privacidade</a>
+            </li>
+            <li>
+              <a href="cookies.html">Políticas de cookies</a>
+            </li>
+            <li>
+              <a href="termos-uso.html">Termos de Uso</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr id="linharodape" />
+      <div class="rodapebaixo">
+        <p>Todos os direitos reservados</p>
+        <div>
+          <img
+            src="../../img/youtube-circle.png"
+            alt="Ícone Youtube"
+            width="35"
+            height="35"
+          />
+          <img
+            src="../../img/twitter-alt-circle.png"
+            alt="Ícone Twitter"
+            width="35"
+            height="35"
+          />
+          <img
+            src="../../img/whatsapp-circle.png"
+            alt="Ícone Whatsapp"
+            width="35"
+            height="35"
+          />
+          <img
+            src="../../img/facebook (1).png"
+            alt="Ícone Facebook"
+            width="35"
+            height="35"
+          />
+          <img
+            src="../../img/instagram-circle.png"
+            alt="Ícone Instagram"
+            width="35"
+            height="35"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="js/contato.js"></script>
+  </body>
+</html>

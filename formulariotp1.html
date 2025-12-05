@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keyword" content="cadastro, usuários" />
+    <meta name="description" content="cadastro de novos usuários" />
+     <title>Todos Por Um</title>
+    <meta
+      name="kaywords"
+      content="política, Marília, ideias, comunidade, união"
+    />
+    <meta
+      name="description"
+      content="O projeto “Todos Por Um” consiste em um website no qual a população de Marília poderá acessar e contribuir com ideias, questões sociais ou projetos, propriamente ditos, cujo objetivo principal será o de levá-los até a Câmara Municipal para serem votados."
+    />
+    <link rel="stylesheet" href="css/formulariotp1.css" />
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="../../img/logo.png" alt="Logo do projeto"
+       width="100"
+            height="60"/>
+      <div class="menu-container">
+        <nav class="menu" id="menu">
+          <a href="javascript:;" id="fechar-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="forum-projetos.html">Fórum</a></li>
+            <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            <li><a href="aprendasobre.html">Aprenda Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+          <a href="login.html" class="btn-login"
+            ><i class="fa-solid fa-right-from-bracket"></i>Login/Registre-se</a
+          >
+        </nav>
+      </div>
+      <div class="btn-desk">
+        <a href="login.html" class="btn-login"
+          ><i class="fa-solid fa-right-from-bracket"></i>Login/Registre-se</a
+        >
+      </div>
+      <button class="hamburguer" id="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <main id="conteudo">
+      <div class="imgmaos">
+        <img src="../../img/conceito-de-diversidade-com-as-maos.jpg"
+        alt="Imagem de mão unidas" />
+      </div>
+      <div class="campos">
+        <h1>FAÇA SEU CADASTRO</h1><hr id="linha">
+        <div id="paragrafo1">
+          Preencha os dados abaixo para criar sua conta no nosso site. Campos
+          marcados com (*) são obrigatórios. Suas informações são confidenciais
+          e poderão ser vistas apenas por você e pela equipe Todos Por Um.
+        </div>
+        <form>
+          <h2>DADOS PESSOAIS</h2>
+          <div class="formulario">
+            <div>
+              <label for="nome">Nome*:</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite aqui.."
+                onchange="
+          if (nome.value.length >=50 ) { 
+            alert('o texto deve ter menos de 50 caracteres.');
+            nome.value = ' ';
+        }
+        "
+              />
+            </div>
+            <div>
+              <label for="sobrenome">Sobrenome*:</label>
+              <input
+                type="text"
+                name="sobrenome"
+                id="sobrenome"
+                placeholder="Digite aqui.."
+                onchange="
+          if (nome.value.length >=50 ) { 
+            alert('o texto deve ter menos de 50 caracteres.');
+            nome.value = ' ';
+        }
+        "
+              />
+            </div>
+            <div>
+              <label for="nomesocial">Nome Social*:</label>
+              <input
+                type="text"
+                name="nomesocial"
+                id="nomesocial"
+                placeholder="Digite aqui.."
+              />
+            </div>
+            <div>
+              <label for="genero">Genero*:</label>
+              <select name="genero" id="genero">
+                <option>Selecione</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="FTG">Feminino Transgênero</option>
+                <option value="MTG">Masculino Transgênero</option>
+                <option value="NI">Prefiro não informar</option>
+              </select>
+            </div>
+            <div>
+              <label for="email">Email*:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite aqui.."
+                onchange="
+          if (email.value.length >=50 ) { 
+            alert('e-mail inválido.');
+            email.value = ' ';
+        }
+        "
+              />
+            </div>
+            <div>
+              <label for="contato">Numero de telefone*:</label>
+              <input
+                type="number"
+                name="contato"
+                id="contato"
+                placeholder="Digite aqui.."
+                onchange="
+        if (parseFloat (contato.value) <= 10) {
+            alert('contato inválido'); 
+            contato.value= ' '; 
+            }
+        "
+              />
+            </div>
+            <div>
+              <label for="datanascimento">Data de Nascimento*:</label>
+              <input
+                type="date"
+                name="datanascimento"
+                id="datanascimento"
+                placeholder="Digite aqui.."
+                onchange="
+          if (datanascimento.value <=Date) { 
+            alert('idade mínima de 18 anos.');
+            datanascimento.value = ' ';
+        }
+        "
+              />
+            </div>
+            <div>
+              <label for="cpf">CPF*:</label>
+              <input
+                type="number"
+                name="cpf"
+                id="cpf"
+                placeholder="Digite aqui.."
+                onchange="
+       if (parseFloat (cpf.value) <= 10) {
+            alert('CPF inválido'); 
+            cpf.value= ' '; 
+            }
+            
+        "
+              />
+            </div>
+            <div>
+              <label for="rg">RG*:</label>
+              <input
+                type="text"
+                name="rg"
+                id="rg"
+                placeholder="Digite aqui.."
+                onchange="
+        if (parseFloat (rg.value) <= 10) {
+            alert('RG inválido'); 
+            rg.value= ''; 
+            }
+        "
+              />
+            </div>
+            <!-- professora vai ensinar a acessar listas e colocar mascara para campos como CPF e RG -->
+            <div>
+             <label for="orgaoemissor">Orgão Emissor*:</label>
+              <input
+                type="text"
+                name="orgaoemissor"
+                id="orgaoemissor"
+                placeholder="Digite aqui.."
+              />
+              </select>
+            </div>
+            <div>
+              <label for="cep">CEP*:</label>
+              <input
+                type="number"
+                name="cep"
+                id="cep"
+                placeholder="Digite aqui.."
+                onchange="
+        if (parseFloat (cep.value) <= 10) {
+            alert('CEP inválido'); 
+            cep.value= ' '; 
+            }
+        "
+              />
+            </div>
+            <div>
+              <label for="rua">Rua*:</label>
+              <input
+                type="text"
+                name="rua"
+                id="rua"
+                placeholder="Digite aqui.."
+                onchange="
+          if (rua.value.length >=50 ) { 
+            alert('o endereço deve ter menos de 50 caracteres.');
+            rua.value = ' ';
+        }
+        "
+              />
+            </div>
+          </div>
+        <fieldset>
+          <legend>DADOS DO PERFIL</legend>
+          <div class="formulario">
+          <div>
+            <label for="nomeusuario">Nome Usuário*:</label>
+            <input
+              type="text"
+              name="nomeusuario"
+              id="nomeusuario"
+              placeholder="Digite aqui.."
+            />
+          </div>
+          <div>
+            <label for="senha">Senha*:</label>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite aqui.."
+            />
+          </div>
+          <div>
+            <label for="confirmarsenha">Confirme sua senha*:</label>
+            <input
+              type="password"
+              name="confirmarsenha"
+              id="confirmarsenha"
+              placeholder="Digite aqui.."
+            />
+          </div>
+          </div>
+        </fieldset>
+        <div class="checkbox">
+          <div>
+          <input type="checkbox" name="aceite[]" id="aceite" value="aceite" />
+          <label for="aceite">
+            Eu concordo em compartilhar meus dados com a
+            equipe Todos Por Um.</label
+          >
+          </div>
+          <div>
+          <input
+            type="checkbox"
+            name="aceite2[]"
+            id="aceite2"
+            value="aceite2"
+          />
+          <label for="aceite2">
+            Eu li e concondo com os Termos de Serviço da comunidade.</label
+          >
+          </div>
+        
+          <div id="registro">
+         <div>                        
+         <a href="login.html">Já tem uma conta? <u>Faça login.</u></a>
+         </div>
+        </div>
+        </div>
+        <div class="botoes">
+        <button type="reset" name="limpar" id="limpar">Limpar</button>
+        <button type="submit" name="criarconta" id="criarconta">
+          Criar minha conta
+        </button>
+        </div>
+      </div>
+      </form>
+    </main>
+  </body>
+  <!-- RODAPÉ RODAPÉ RODAPÉ RODAPÉ !!!!!! -->
+    <footer>
+      <div class="rodape">
+        <div id="logorodape">
+        <img id="logorodape"
+          src="../../img/logo branco.png"
+          alt="Logo Todos por Um"
+          width="170"
+          height="90"
+        />
+        </div>
+        <div id="responsivoRodape">
+        <ul>
+            <li class="rodapetitulo">Fórum</li>
+            <li>
+              <a href="forum-projetos.html">Posts em destaque</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Sua área</li>
+            <li>
+              <a href="sua-conta.html">Sua conta</a>
+            </li>
+            <li>
+              <a href="suas-postagens.html">Suas postagens</a>
+            </li>
+            <li>
+              <a href="seguranca-privacidade.html">Segurança e privacidade</a>
+            </li>
+            <li>
+              <a href="acessibilidade.html">Acessibilidade</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Sobre nós</li>
+            <li>
+              <a href="sobre-nos.html">Sobre o projeto</a>
+            </li>
+            <li>
+              <a href="sobre-nos.html">Nossos objetivos</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Contato</li>
+            <li>
+              <a href="contato.html">Entre em contato</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Aprenda Sobre</li>
+            <li>
+              <a href="aprenda-videos.html">Vídeos</a>
+            </li>
+            <li>
+              <a href="aprendasobre.html">Artigos</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="rodapetitulo">Nossas políticas</li>
+            <li>
+              <a href="politica-privacidade.html">Políticas de privacidade</a>
+            </li>
+            <li>
+              <a href="cookies.html">Políticas de cookies</a>
+            </li>
+            <li>
+              <a href="termos-uso.html">Termos de Uso</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr id="linharodape">
+      <div class="rodapebaixo">
+        <p>Todos os direitos reservados</p>
+        <div>
+        <img src="../../img/youtube-circle.png" alt="Ícone Youtube" width="35" height="35" />
+        <img src="../../img/twitter-alt-circle.png" alt="Ícone Twitter" width="35" height="35" />
+        <img src="../../img/whatsapp-circle.png" alt="Ícone Whatsapp" width="35" height="35" />
+        <img src="../../img/facebook (1).png" alt="Ícone Facebook" width="35" height="35" />
+        <img src="../../img/instagram-circle.png" alt="Ícone Instagram" width="35" height="35" />
+        </div>
+      </div>
+    </footer>
+    <script src="js/formulario.js"></script>
+</html>
